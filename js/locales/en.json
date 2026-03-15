@@ -1,0 +1,149 @@
+{
+  "app": {
+    "skipLink": "Skip to main content",
+    "loading": "Loading...",
+    "backHome": "DopaBrain Home"
+  },
+  "intro": {
+    "title": "What Type of Overthinker Are You?",
+    "subtitle": "Everyone overthinks. But HOW you overthink says a lot about you.",
+    "socialProof": "Join <strong>14,200+</strong> fellow overthinkers",
+    "startBtn": "Discover My Overthinking Style",
+    "timeEstimate": "~2 min \u2022 8 questions",
+    "carousel1": "3AM Spiral Thinker",
+    "carousel2": "Scenario Architect",
+    "carousel3": "Reply Rehearser",
+    "carousel4": "Micro-Expression Analyst",
+    "feature1": "8 Quick Questions",
+    "feature2": "6 Unique Types",
+    "feature3": "Painfully Relatable"
+  },
+  "question": {
+    "0": "It's 2 AM and you can't sleep. What's your brain doing?",
+    "0a": "Replaying that embarrassing thing you said 3 years ago",
+    "0b": "Imagining alternate timelines where you made different choices",
+    "0c": "Rehearsing tomorrow's conversation word by word",
+    "0d": "Listing everything that could possibly go wrong tomorrow",
+    "1": "You're about to meet someone new. What happens in your head?",
+    "1a": "You rehearse your introduction 47 times",
+    "1b": "You analyze their every facial expression during the conversation",
+    "1c": "You imagine all 12 possible outcomes of the meeting",
+    "1d": "You replay the conversation for 3 days straight afterwards",
+    "2": "You just sent an important text. Now what?",
+    "2a": "Re-read it 8 times wondering if the period sounds angry",
+    "2b": "Imagine every possible way they might interpret your words",
+    "2c": "Spiral into panic because they read it but haven't replied",
+    "2d": "Draft 5 follow-up messages, send none of them",
+    "3": "Something stressful happens at work. Your reaction?",
+    "3a": "Can't sleep — your mind runs in circles all night",
+    "3b": "Immediately jump to: I'm going to get fired, lose my house, live in a van",
+    "3c": "Build a 47-step contingency plan for every possible outcome",
+    "3d": "Obsess over what you could have done differently",
+    "4": "Your friend seems distant lately. Your thought process?",
+    "4a": "Analyze their last 20 messages for hidden meaning",
+    "4b": "Practice 'Are you mad at me?' in 15 different tones",
+    "4c": "Imagine the 8 reasons they might secretly hate you",
+    "4d": "Lie awake replaying every interaction for clues",
+    "5": "You need to make an important decision. How do you handle it?",
+    "5a": "Research obsessively until you have 47 browser tabs open",
+    "5b": "Focus entirely on what could go wrong with each option",
+    "5c": "Ask everyone you know, then overanalyze all their advice",
+    "5d": "Decide, then immediately second-guess yourself for weeks",
+    "6": "How do you think about the future?",
+    "6a": "Catastrophize about unlikely disasters in vivid detail",
+    "6b": "Create detailed mental simulations of every possible path",
+    "6c": "Lose sleep over things that are literally years away",
+    "6d": "Rehearse hypothetical future conversations that may never happen",
+    "7": "You're overthinking right now. What does THAT look like?",
+    "7a": "Overthinking about how much you overthink (inception!)",
+    "7b": "Analyzing exactly WHY you overthink everything",
+    "7c": "Building theories about your own thought patterns",
+    "7d": "Worrying that overthinking will eventually ruin your life"
+  },
+  "quiz": {
+    "midQuiz": "Halfway there! Your overthinking profile is taking shape..."
+  },
+  "analyzing": {
+    "title": "Analyzing your thought patterns...",
+    "step1": "Scanning thought loops...",
+    "step2": "Measuring spiral intensity...",
+    "step3": "Detecting late-night patterns...",
+    "step4": "Calculating overthinking wavelength...",
+    "step5": "Profile complete!"
+  },
+  "type": {
+    "spiral": {
+      "name": "3AM Spiral Thinker",
+      "tagline": "Your brain has no off switch, especially at 2 AM.",
+      "description": "You're the classic overthinker whose mind kicks into overdrive the moment your head hits the pillow. One thought leads to another, which leads to another, until you're contemplating the meaning of life at 3 AM. Your thoughts don't go in lines — they go in spirals, each loop pulling you deeper. The good news? Your mind never stops working, which means you're incredibly thorough and self-aware.",
+      "trait1": "Night Owl Thinker",
+      "trait2": "Deep Self-Reflection",
+      "trait3": "Circular Logic Master"
+    },
+    "architect": {
+      "name": "Scenario Architect",
+      "tagline": "You've already planned for 47 alternate timelines.",
+      "description": "Your brain is a simulation engine. Before anything happens, you've already imagined every possible outcome, created contingency plans, and mapped out decision trees. You don't just think about what might happen — you build entire mental worlds around possibilities. While others live in one reality, you're simultaneously running scenarios in a dozen parallel universes. This makes you an incredible strategist and problem solver.",
+      "trait1": "Strategic Planner",
+      "trait2": "Possibility Explorer",
+      "trait3": "Mental Simulator"
+    },
+    "rehearser": {
+      "name": "Reply Rehearser",
+      "tagline": "You've practiced this conversation 12 times already.",
+      "description": "Every conversation is a performance you've rehearsed dozens of times. You draft texts in your Notes app before sending them. You practice your responses to questions nobody has asked yet. You know exactly what you'd say if someone brought up that topic — because you've prepared a 3-minute speech about it in the shower. Your conversations are never spontaneous, but they're always polished.",
+      "trait1": "Communication Perfectionist",
+      "trait2": "Preparation Master",
+      "trait3": "Word Craftsperson"
+    },
+    "analyst": {
+      "name": "Micro-Expression Analyst",
+      "tagline": "Did they blink twice? That means something.",
+      "description": "You notice everything. The slight pause before someone answers, the barely perceptible change in their tone, the way they looked at their phone during your story. Your brain is a pattern-recognition machine tuned to pick up social signals that most people miss. You read between every line and behind every smile. While this can be exhausting, it also makes you incredibly empathetic and emotionally intelligent.",
+      "trait1": "Human Behavior Expert",
+      "trait2": "Hyper-Observant",
+      "trait3": "Emotional Intelligence"
+    },
+    "catastrophizer": {
+      "name": "Future Catastrophizer",
+      "tagline": "My hobby? Imagining worst-case scenarios in 4K.",
+      "description": "A small problem doesn't exist in your world — every issue immediately escalates to its most dramatic conclusion. Got a headache? Probably a brain tumor. Boss wants to talk? You're getting fired. Friend didn't text back? They hate you forever. Your brain is a disaster movie director, always ready to produce the next blockbuster catastrophe. But here's the thing — you're also the most prepared person in any room because you've already survived every worst-case scenario in your head.",
+      "trait1": "Worst-Case Expert",
+      "trait2": "Crisis Preparedness",
+      "trait3": "Vivid Imagination"
+    },
+    "replayer": {
+      "name": "Selective Memory Replayer",
+      "tagline": "Still cringing about something from 2009.",
+      "description": "Your brain is a time machine that exclusively travels to your most embarrassing moments. That awkward thing you said at a party in 2015? Crystal clear. The time you waved back at someone who wasn't waving at you? Replayed nightly. You have a photographic memory, but only for moments you'd rather forget. While you can't remember where you put your keys, you can recall every cringeworthy detail of that conversation from 7 years ago.",
+      "trait1": "Cringe Archaeologist",
+      "trait2": "Detail Perfectionist",
+      "trait3": "Self-Aware Historian"
+    }
+  },
+  "result": {
+    "metricsTitle": "Your Overthinking Profile",
+    "metric": {
+      "nightThinking": "Night Thinking",
+      "loopIntensity": "Loop Intensity",
+      "sleepImpact": "Sleep Impact",
+      "creativity": "Creativity Boost",
+      "anxiety": "Anxiety Level"
+    },
+    "percentile": "{pct}% of overthinkers share your type",
+    "shareTitle": "Share your overthinking type!",
+    "copyLink": "Copy",
+    "moreTests": "More Tests",
+    "retry": "Try Again"
+  },
+  "related": {
+    "emotionIceberg": "Emotion Iceberg",
+    "stressCheck": "Stress Check",
+    "hspTest": "HSP Test",
+    "aiPersonality": "AI Personality"
+  },
+  "share": {
+    "text": "I'm a {emoji} {type}! What type of overthinker are you? Find out:",
+    "copied": "Copied!"
+  }
+}
