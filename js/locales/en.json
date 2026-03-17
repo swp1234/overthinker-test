@@ -141,7 +141,8 @@
     "stressCheck": "Stress Check",
     "hspTest": "HSP Test",
     "aiPersonality": "AI Personality",
-    "stressResponse": "Stress Response"
+    "stressResponse": "Stress Response",
+    "anxietyType": "Anxiety Type"
   },
   "share": {
     "text": "I'm a {emoji} {type}! What type of overthinker are you? Find out:",

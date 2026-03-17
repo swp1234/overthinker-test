@@ -141,7 +141,8 @@
     "stressCheck": "压力检测",
     "hspTest": "HSP测试",
     "aiPersonality": "AI人格",
-    "stressResponse": "压力反应"
+    "stressResponse": "压力反应",
+    "anxietyType": "焦虑类型"
   },
   "share": {
     "text": "我是{emoji} {type}！你是哪种过度思考者？来测测：",

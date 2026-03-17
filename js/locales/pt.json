@@ -141,7 +141,8 @@
     "stressCheck": "Teste de Estresse",
     "hspTest": "Teste HSP",
     "aiPersonality": "Personalidade AI",
-    "stressResponse": "Resposta ao Estresse"
+    "stressResponse": "Resposta ao Estresse",
+    "anxietyType": "Tipo de Ansiedade"
   },
   "share": {
     "text": "Eu sou {emoji} {type}! Que tipo de pensador excessivo você é? Descubra:",

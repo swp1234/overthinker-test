@@ -141,7 +141,8 @@
     "stressCheck": "Стресс-Чек",
     "hspTest": "HSP Тест",
     "aiPersonality": "AI Личность",
-    "stressResponse": "Стресс-реакция"
+    "stressResponse": "Стресс-реакция",
+    "anxietyType": "Тип тревожности"
   },
   "share": {
     "text": "Я — {emoji} {type}! Какой ты тип overthинкера? Узнай:",

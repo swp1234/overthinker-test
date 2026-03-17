@@ -141,7 +141,8 @@
     "stressCheck": "Cek Stres",
     "hspTest": "Tes HSP",
     "aiPersonality": "Kepribadian AI",
-    "stressResponse": "Respons Stres"
+    "stressResponse": "Respons Stres",
+    "anxietyType": "Tipe Kecemasan"
   },
   "share": {
     "text": "Aku {emoji} {type}! Kamu tipe overthinker yang mana? Cek di sini:",

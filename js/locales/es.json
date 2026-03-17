@@ -141,7 +141,8 @@
     "stressCheck": "Chequeo de Estrés",
     "hspTest": "Test HSP",
     "aiPersonality": "Personalidad AI",
-    "stressResponse": "Respuesta al Estrés"
+    "stressResponse": "Respuesta al Estrés",
+    "anxietyType": "Tipo de Ansiedad"
   },
   "share": {
     "text": "¡Soy {emoji} {type}! ¿Qué tipo de sobrepensador eres? Descúbrelo:",

@@ -141,7 +141,8 @@
     "stressCheck": "Stres Kontrolü",
     "hspTest": "HSP Testi",
     "aiPersonality": "AI Kişiliği",
-    "stressResponse": "Stres Tepkisi"
+    "stressResponse": "Stres Tepkisi",
+    "anxietyType": "Kaygı Tipi"
   },
   "share": {
     "text": "Ben bir {emoji} {type}! Sen ne tür bir aşırı düşünücüsün? Öğren:",

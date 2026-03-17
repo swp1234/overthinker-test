@@ -141,7 +141,8 @@
     "stressCheck": "Stress-Check",
     "hspTest": "HSP-Test",
     "aiPersonality": "AI-Persönlichkeit",
-    "stressResponse": "Stressreaktion"
+    "stressResponse": "Stressreaktion",
+    "anxietyType": "Angsttyp"
   },
   "share": {
     "text": "Ich bin ein {emoji} {type}! Welcher Überdenker-Typ bist du? Finde es heraus:",

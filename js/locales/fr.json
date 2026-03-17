@@ -141,7 +141,8 @@
     "stressCheck": "Bilan de Stress",
     "hspTest": "Test HSP",
     "aiPersonality": "Personnalité AI",
-    "stressResponse": "Réponse au Stress"
+    "stressResponse": "Réponse au Stress",
+    "anxietyType": "Type d'Anxiété"
   },
   "share": {
     "text": "Je suis un {emoji} {type} ! Quel type de sur-penseur es-tu ? Découvre-le :",
