@@ -140,7 +140,8 @@
     "emotionIceberg": "Emotions-Eisberg",
     "stressCheck": "Stress-Check",
     "hspTest": "HSP-Test",
-    "aiPersonality": "AI-Persönlichkeit"
+    "aiPersonality": "AI-Persönlichkeit",
+    "stressResponse": "Stressreaktion"
   },
   "share": {
     "text": "Ich bin ein {emoji} {type}! Welcher Überdenker-Typ bist du? Finde es heraus:",

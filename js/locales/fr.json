@@ -140,7 +140,8 @@
     "emotionIceberg": "Iceberg Émotionnel",
     "stressCheck": "Bilan de Stress",
     "hspTest": "Test HSP",
-    "aiPersonality": "Personnalité AI"
+    "aiPersonality": "Personnalité AI",
+    "stressResponse": "Réponse au Stress"
   },
   "share": {
     "text": "Je suis un {emoji} {type} ! Quel type de sur-penseur es-tu ? Découvre-le :",

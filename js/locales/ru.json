@@ -140,7 +140,8 @@
     "emotionIceberg": "Айсберг Эмоций",
     "stressCheck": "Стресс-Чек",
     "hspTest": "HSP Тест",
-    "aiPersonality": "AI Личность"
+    "aiPersonality": "AI Личность",
+    "stressResponse": "Стресс-реакция"
   },
   "share": {
     "text": "Я — {emoji} {type}! Какой ты тип overthинкера? Узнай:",

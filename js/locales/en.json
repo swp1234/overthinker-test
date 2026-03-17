@@ -9,7 +9,7 @@
     "subtitle": "Everyone overthinks. But HOW you overthink says a lot about you.",
     "socialProof": "Join <strong>14,200+</strong> fellow overthinkers",
     "startBtn": "Discover My Overthinking Style",
-    "timeEstimate": "~2 min \u2022 8 questions",
+    "timeEstimate": "~2 min • 8 questions",
     "carousel1": "3AM Spiral Thinker",
     "carousel2": "Scenario Architect",
     "carousel3": "Reply Rehearser",
@@ -140,7 +140,8 @@
     "emotionIceberg": "Emotion Iceberg",
     "stressCheck": "Stress Check",
     "hspTest": "HSP Test",
-    "aiPersonality": "AI Personality"
+    "aiPersonality": "AI Personality",
+    "stressResponse": "Stress Response"
   },
   "share": {
     "text": "I'm a {emoji} {type}! What type of overthinker are you? Find out:",

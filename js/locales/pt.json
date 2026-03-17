@@ -140,7 +140,8 @@
     "emotionIceberg": "Iceberg Emocional",
     "stressCheck": "Teste de Estresse",
     "hspTest": "Teste HSP",
-    "aiPersonality": "Personalidade AI"
+    "aiPersonality": "Personalidade AI",
+    "stressResponse": "Resposta ao Estresse"
   },
   "share": {
     "text": "Eu sou {emoji} {type}! Que tipo de pensador excessivo você é? Descubra:",

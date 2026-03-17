@@ -140,7 +140,8 @@
     "emotionIceberg": "Duygu Buzdağı",
     "stressCheck": "Stres Kontrolü",
     "hspTest": "HSP Testi",
-    "aiPersonality": "AI Kişiliği"
+    "aiPersonality": "AI Kişiliği",
+    "stressResponse": "Stres Tepkisi"
   },
   "share": {
     "text": "Ben bir {emoji} {type}! Sen ne tür bir aşırı düşünücüsün? Öğren:",

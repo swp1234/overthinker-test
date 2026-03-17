@@ -140,7 +140,8 @@
     "emotionIceberg": "감정 빙산",
     "stressCheck": "스트레스 체크",
     "hspTest": "HSP 테스트",
-    "aiPersonality": "AI 성격"
+    "aiPersonality": "AI 성격",
+    "stressResponse": "스트레스 반응"
   },
   "share": {
     "text": "나는 {emoji} {type}! 당신은 어떤 과잉사고자인가요?",

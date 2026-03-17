@@ -140,7 +140,8 @@
     "emotionIceberg": "इमोशन आइसबर्ग",
     "stressCheck": "स्ट्रेस चेक",
     "hspTest": "HSP टेस्ट",
-    "aiPersonality": "AI पर्सनैलिटी"
+    "aiPersonality": "AI पर्सनैलिटी",
+    "stressResponse": "तनाव प्रतिक्रिया"
   },
   "share": {
     "text": "मैं {emoji} {type} हूँ! आप किस टाइप के ओवरथिंकर हैं? पता करें:",
