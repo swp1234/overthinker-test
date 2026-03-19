@@ -6,6 +6,7 @@
   },
   "intro": {
     "title": "Sen Ne Tür Bir Aşırı Düşünücüsün?",
+    "hook": "Gece 3'te konusmalari tekrar mi ediyorsunuz? Mesaj gondermeden once prova mi yapiyorsunuz?",
     "subtitle": "Herkes aşırı düşünür. Ama NASIL düşündüğün senin hakkında çok şey söylüyor.",
     "socialProof": "<strong>14.200+</strong> aşırı düşünücüye katıl",
     "startBtn": "Aşırı Düşünme Stilimi Keşfet",
@@ -142,7 +143,9 @@
     "hspTest": "HSP Testi",
     "aiPersonality": "AI Kişiliği",
     "stressResponse": "Stres Tepkisi",
-    "anxietyType": "Kaygı Tipi"
+    "anxietyType": "Kaygı Tipi",
+    "eqTest": "EQ Testi",
+    "dopamineType": "Dopamin Tipi"
   },
   "share": {
     "text": "Ben bir {emoji} {type}! Sen ne tür bir aşırı düşünücüsün? Öğren:",

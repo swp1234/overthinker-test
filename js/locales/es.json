@@ -6,6 +6,7 @@
   },
   "intro": {
     "title": "¿Qué tipo de sobrepensar tienes?",
+    "hook": "Repites conversaciones a las 3AM? Ensayas mensajes antes de enviarlos?",
     "subtitle": "Todos pensamos de más. Pero CÓMO lo haces dice mucho de ti.",
     "socialProof": "Únete a <strong>14.200+</strong> sobrepensadores",
     "startBtn": "Descubrir mi estilo de sobrepensar",
@@ -142,7 +143,9 @@
     "hspTest": "Test HSP",
     "aiPersonality": "Personalidad AI",
     "stressResponse": "Respuesta al Estrés",
-    "anxietyType": "Tipo de Ansiedad"
+    "anxietyType": "Tipo de Ansiedad",
+    "eqTest": "Test de EQ",
+    "dopamineType": "Tipo de Dopamina"
   },
   "share": {
     "text": "¡Soy {emoji} {type}! ¿Qué tipo de sobrepensador eres? Descúbrelo:",

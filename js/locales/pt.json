@@ -6,6 +6,7 @@
   },
   "intro": {
     "title": "Que tipo de pensador excessivo você é?",
+    "hook": "Voce repassa conversas as 3 da manha? Ensaia mensagens antes de enviar?",
     "subtitle": "Todo mundo pensa demais. Mas COMO você pensa demais diz muito sobre você.",
     "socialProof": "Junte-se a <strong>14.200+</strong> pensadores excessivos",
     "startBtn": "Descobrir meu estilo de pensar demais",
@@ -142,7 +143,9 @@
     "hspTest": "Teste HSP",
     "aiPersonality": "Personalidade AI",
     "stressResponse": "Resposta ao Estresse",
-    "anxietyType": "Tipo de Ansiedade"
+    "anxietyType": "Tipo de Ansiedade",
+    "eqTest": "Teste de QE",
+    "dopamineType": "Tipo de Dopamina"
   },
   "share": {
     "text": "Eu sou {emoji} {type}! Que tipo de pensador excessivo você é? Descubra:",

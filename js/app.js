@@ -106,11 +106,9 @@ class OverthinkerQuiz {
   }
 
   init() {
-    // Hide loader
-    setTimeout(() => {
-      const loader = document.getElementById('app-loader');
-      if (loader) { loader.classList.add('hidden'); setTimeout(() => loader.remove(), 300); }
-    }, 600);
+    // Hide loader immediately
+    const loader = document.getElementById('app-loader');
+    if (loader) { loader.classList.add('hidden'); setTimeout(() => loader.remove(), 300); }
 
     // Theme
     this.initTheme();

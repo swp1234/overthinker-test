@@ -6,6 +6,7 @@
   },
   "intro": {
     "title": "당신은 어떤 유형의 과잉사고자인가요?",
+    "hook": "새벽 3시에 대화를 되새기나요? 문자 보내기 전에 리허설하나요?",
     "subtitle": "누구나 과잉사고를 합니다. 하지만 어떻게 하느냐가 당신을 말해줍니다.",
     "socialProof": "<strong>14,200+</strong>명의 과잉사고자들과 함께하세요",
     "startBtn": "나의 과잉사고 스타일 발견하기",
@@ -142,7 +143,9 @@
     "hspTest": "HSP 테스트",
     "aiPersonality": "AI 성격",
     "stressResponse": "스트레스 반응",
-    "anxietyType": "불안 유형"
+    "anxietyType": "불안 유형",
+    "eqTest": "EQ 테스트",
+    "dopamineType": "도파민 유형"
   },
   "share": {
     "text": "나는 {emoji} {type}! 당신은 어떤 과잉사고자인가요?",

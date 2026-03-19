@@ -6,6 +6,7 @@
   },
   "intro": {
     "title": "Kamu Tipe Overthinker yang Mana?",
+    "hook": "Apakah kamu memutar ulang percakapan jam 3 pagi? Melatih pesan sebelum mengirim?",
     "subtitle": "Semua orang overthinking. Tapi CARA kamu overthinking bilang banyak tentang dirimu.",
     "socialProof": "Bergabung dengan <strong>14.200+</strong> sesama overthinker",
     "startBtn": "Temukan Gaya Overthinking-ku",
@@ -142,7 +143,9 @@
     "hspTest": "Tes HSP",
     "aiPersonality": "Kepribadian AI",
     "stressResponse": "Respons Stres",
-    "anxietyType": "Tipe Kecemasan"
+    "anxietyType": "Tipe Kecemasan",
+    "eqTest": "Tes EQ",
+    "dopamineType": "Tipe Dopamin"
   },
   "share": {
     "text": "Aku {emoji} {type}! Kamu tipe overthinker yang mana? Cek di sini:",

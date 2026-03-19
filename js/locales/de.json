@@ -6,6 +6,7 @@
   },
   "intro": {
     "title": "Welcher Typ Überdenker bist du?",
+    "hook": "Spielst du Gesprache um 3 Uhr nachts nach? Probst du Nachrichten vor dem Senden?",
     "subtitle": "Jeder denkt zu viel nach. Aber WIE du es tust, sagt viel über dich aus.",
     "socialProof": "Schließ dich <strong>14.200+</strong> Überdenkern an",
     "startBtn": "Meinen Überdenker-Stil entdecken",
@@ -142,7 +143,9 @@
     "hspTest": "HSP-Test",
     "aiPersonality": "AI-Persönlichkeit",
     "stressResponse": "Stressreaktion",
-    "anxietyType": "Angsttyp"
+    "anxietyType": "Angsttyp",
+    "eqTest": "EQ-Test",
+    "dopamineType": "Dopamin-Typ"
   },
   "share": {
     "text": "Ich bin ein {emoji} {type}! Welcher Überdenker-Typ bist du? Finde es heraus:",

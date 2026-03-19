@@ -6,6 +6,7 @@
   },
   "intro": {
     "title": "你是哪种类型的过度思考者？",
+    "hook": "你会在凌晨3点回想对话吗？发信息前反复修改？",
     "subtitle": "每个人都会想太多。但你怎么想太多，说明了很多问题。",
     "socialProof": "加入<strong>14,200+</strong>位过度思考者的行列",
     "startBtn": "发现我的过度思考风格",
@@ -142,7 +143,9 @@
     "hspTest": "HSP测试",
     "aiPersonality": "AI人格",
     "stressResponse": "压力反应",
-    "anxietyType": "焦虑类型"
+    "anxietyType": "焦虑类型",
+    "eqTest": "EQ测试",
+    "dopamineType": "多巴胺类型"
   },
   "share": {
     "text": "我是{emoji} {type}！你是哪种过度思考者？来测测：",

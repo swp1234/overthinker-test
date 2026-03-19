@@ -6,6 +6,7 @@
   },
   "intro": {
     "title": "あなたはどんなタイプの考えすぎさん？",
+    "hook": "深夜3時に会話を思い返す？送信前にメッセージをリハーサルする？",
     "subtitle": "誰でも考えすぎる。でも「どう」考えすぎるかが、あなたを物語る。",
     "socialProof": "<strong>14,200+</strong>人の考えすぎ仲間に参加",
     "startBtn": "自分の考えすぎタイプを発見",
@@ -142,7 +143,9 @@
     "hspTest": "HSPテスト",
     "aiPersonality": "AI性格診断",
     "stressResponse": "ストレス反応",
-    "anxietyType": "不安タイプ"
+    "anxietyType": "不安タイプ",
+    "eqTest": "EQ テスト",
+    "dopamineType": "ドーパミンタイプ"
   },
   "share": {
     "text": "私は{emoji} {type}！あなたはどんな考えすぎタイプ？診断はこちら：",

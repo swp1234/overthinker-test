@@ -6,6 +6,7 @@
   },
   "intro": {
     "title": "Quel type de sur-penseur es-tu ?",
+    "hook": "Vous rejouez des conversations a 3h du matin ? Repetez vos messages avant de les envoyer ?",
     "subtitle": "Tout le monde pense trop. Mais COMMENT tu penses trop en dit long sur toi.",
     "socialProof": "Rejoins <strong>14 200+</strong> sur-penseurs",
     "startBtn": "Découvrir mon style de sur-pensée",
@@ -142,7 +143,9 @@
     "hspTest": "Test HSP",
     "aiPersonality": "Personnalité AI",
     "stressResponse": "Réponse au Stress",
-    "anxietyType": "Type d'Anxiété"
+    "anxietyType": "Type d'Anxiété",
+    "eqTest": "Test QE",
+    "dopamineType": "Type de Dopamine"
   },
   "share": {
     "text": "Je suis un {emoji} {type} ! Quel type de sur-penseur es-tu ? Découvre-le :",

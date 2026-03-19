@@ -6,6 +6,7 @@
   },
   "intro": {
     "title": "What Type of Overthinker Are You?",
+    "hook": "Do you replay conversations at 3AM? Rehearse texts before sending?",
     "subtitle": "Everyone overthinks. But HOW you overthink says a lot about you.",
     "socialProof": "Join <strong>14,200+</strong> fellow overthinkers",
     "startBtn": "Discover My Overthinking Style",
@@ -142,7 +143,9 @@
     "hspTest": "HSP Test",
     "aiPersonality": "AI Personality",
     "stressResponse": "Stress Response",
-    "anxietyType": "Anxiety Type"
+    "anxietyType": "Anxiety Type",
+    "eqTest": "EQ Test",
+    "dopamineType": "Dopamine Type"
   },
   "share": {
     "text": "I'm a {emoji} {type}! What type of overthinker are you? Find out:",
