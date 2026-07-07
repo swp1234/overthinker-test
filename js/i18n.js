@@ -12,6 +12,11 @@ class I18n {
   }
 
   detectLanguage() {
+    try {
+      const params = new URLSearchParams(window.location.search || '');
+      const urlLang = params.get('lang');
+      if (urlLang && this.supportedLangs.includes(urlLang)) return urlLang;
+    } catch (e) {}
     const saved = localStorage.getItem('preferredLanguage');
     if (saved && this.supportedLangs.includes(saved)) return saved;
     const browser = (navigator.language || '').split('-')[0];
