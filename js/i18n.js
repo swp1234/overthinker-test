@@ -8,7 +8,7 @@ class I18n {
     this.translations = {};
     this.supportedLangs = ['ko','en','zh','hi','ru','ja','es','pt','id','tr','de','fr'];
     this.currentLang = this.detectLanguage();
-    this.loadTranslations(this.currentLang).then(() => this.updateUI());
+    this.ready = this.loadTranslations(this.currentLang).then(() => this.updateUI());
   }
 
   detectLanguage() {
@@ -37,7 +37,7 @@ class I18n {
           this.translations = await res.json();
           this.currentLang = 'en';
         } catch (e2) {
-          console.error('i18n: Failed to load fallback', e2);
+          console.warn('i18n: Failed to load fallback', e2);
         }
       }
     }

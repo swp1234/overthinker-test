@@ -102,6 +102,10 @@ class OverthinkerQuiz {
     this.scores = [0, 0, 0, 0, 0, 0]; // spiral, architect, rehearser, analyst, catastrophizer, replayer
     this.answers = [];
     this.carouselIdx = 0;
+    this.entrySurface = new URLSearchParams(window.location.search).get('surface') || 'direct';
+    this.autoStartConsumed = false;
+    this.resultViewTracked = false;
+    this.resultAdLoaded = false;
     this.init();
   }
 
@@ -117,13 +121,14 @@ class OverthinkerQuiz {
     // Carousel
     this.initCarousel();
     // Buttons
-    document.getElementById('start-btn').addEventListener('click', () => this.startQuiz());
+    document.getElementById('start-btn').addEventListener('click', () => this.startQuiz('intro_button'));
     document.getElementById('retry-btn').addEventListener('click', () => this.retryQuiz());
     // Share
     document.getElementById('share-kakao').addEventListener('click', () => this.shareKakao());
     document.getElementById('share-twitter').addEventListener('click', () => this.shareTwitter());
     document.getElementById('share-facebook').addEventListener('click', () => this.shareFacebook());
     document.getElementById('share-copy').addEventListener('click', () => this.shareCopy());
+    this.tryAutoStart();
   }
 
   initTheme() {
@@ -177,13 +182,35 @@ class OverthinkerQuiz {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  startQuiz() {
+  trackEvent(name, params = {}) {
+    try {
+      gtag('event', name, Object.assign({ event_category: 'overthinker_test', entry_surface: this.entrySurface }, params));
+    } catch(e) {}
+  }
+
+  tryAutoStart() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('start') !== '1' || this.autoStartConsumed) return;
+    this.autoStartConsumed = true;
+    this.trackEvent('overthinker_auto_start', { cta_surface: this.entrySurface });
+    const start = () => requestAnimationFrame(() => this.startQuiz('auto_start'));
+    if (window.i18n && window.i18n.ready && typeof window.i18n.ready.then === 'function') {
+      window.i18n.ready.then(start);
+    } else {
+      start();
+    }
+  }
+
+  startQuiz(trigger = 'intro_button') {
     this.currentQuestion = 0;
     this.scores = [0, 0, 0, 0, 0, 0];
     this.answers = [];
+    this.resultViewTracked = false;
     this.showScreen('question-screen');
     this.renderQuestion();
-    try { gtag('event', 'quiz_start', { event_category: 'overthinker_test' }); } catch(e) {}
+    const eventParams = { cta_surface: this.entrySurface, start_trigger: trigger };
+    this.trackEvent('quiz_start', eventParams);
+    this.trackEvent('test_start', eventParams);
   }
 
   renderQuestion() {
@@ -323,11 +350,36 @@ class OverthinkerQuiz {
 
     // Confetti
     this.spawnConfetti();
+    this.ensureResultAdLoaded();
 
-    // GA4
-    try { gtag('event', 'quiz_complete', { event_category: 'overthinker_test', event_label: result.id }); } catch(e) {}
+    if (!this.resultViewTracked) {
+      const resultParams = { event_label: result.id, result_type: result.id, cta_surface: this.entrySurface, value: 1 };
+      this.trackEvent('quiz_complete', resultParams);
+      this.trackEvent('test_complete', resultParams);
+      this.trackEvent('result_view', resultParams);
+      this.trackEvent('overthinker_result_view', resultParams);
+      this.resultViewTracked = true;
+    }
 
     this.currentResult = result;
+  }
+
+  ensureResultAdLoaded() {
+    if (this.resultAdLoaded) return;
+    const slot = document.getElementById('overthinker-result-ad');
+    const adNode = slot ? slot.querySelector('ins.adsbygoogle') : null;
+    if (!slot || !adNode) return;
+    slot.dataset.loaded = 'true';
+    this.resultAdLoaded = true;
+    if (window.location.protocol !== 'file:') {
+      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); }
+      catch (e) { slot.dataset.loaded = 'error'; }
+    }
+    this.trackEvent('overthinker_result_ad_impression', {
+      cta_surface: this.entrySurface,
+      ad_surface: slot.getAttribute('data-ad-surface') || 'overthinker_result',
+      ad_slot: adNode.getAttribute('data-ad-slot') || 'auto'
+    });
   }
 
   spawnConfetti() {
@@ -347,7 +399,7 @@ class OverthinkerQuiz {
   }
 
   retryQuiz() {
-    this.startQuiz();
+    this.startQuiz('retry');
   }
 
   getShareText() {
