@@ -1,154 +1,107 @@
 {
   "app": {
-    "skipLink": "Saltar al contenido principal",
-    "loading": "Cargando...",
-    "backHome": "DopaBrain Inicio"
+    "skipLink": "Ir al contenido",
+    "backHome": "Volver a DopaBrain"
   },
   "intro": {
-    "title": "¿Qué tipo de sobrepensar tienes?",
-    "hook": "Repites conversaciones a las 3AM? Ensayas mensajes antes de enviarlos?",
-    "subtitle": "Todos pensamos de más. Pero CÓMO lo haces dice mucho de ti.",
-    "socialProof": "Únete a <strong>14.200+</strong> sobrepensadores",
-    "startBtn": "Descubrir mi estilo de sobrepensar",
-    "timeEstimate": "~2 min • 8 preguntas",
-    "carousel1": "Pensador Espiral de las 3 AM",
-    "carousel2": "Arquitecto de Escenarios",
-    "carousel3": "Ensayador de Respuestas",
-    "carousel4": "Analista de Microexpresiones",
-    "feature1": "8 preguntas rápidas",
-    "feature2": "6 tipos únicos",
-    "feature3": "Dolorosamente relatable"
+    "eyebrow": "Reflexión de 8 preguntas",
+    "title": "¿Qué bucle de pensamiento aparece más?",
+    "hook": "Elige la respuesta más parecida a lo que sueles hacer. No hay respuestas correctas.",
+    "boundaryTitle": "Qué puede decirte",
+    "boundary": "Es una instantánea lúdica de tus respuestas, no una evaluación de salud mental ni una etiqueta fija de personalidad.",
+    "startBtn": "Empezar la reflexión",
+    "timeEstimate": "Aproximadamente 1 minuto · 8 preguntas",
+    "methodTitle": "Cómo se calcula",
+    "method": "Cada respuesta suma un punto al bucle que describe. Se muestra el más elegido; en empate se usa el primero según el orden de las preguntas."
   },
   "question": {
     "0": "Son las 2 AM y no puedes dormir. ¿Qué está haciendo tu cerebro?",
+    "1": "Estás a punto de conocer a alguien nuevo. ¿Qué pasa en tu cabeza?",
+    "2": "Acabas de enviar un mensaje importante. ¿Y ahora?",
+    "3": "Algo estresante pasa en el trabajo. ¿Tu reacción?",
+    "4": "Tu amigo/a parece distante últimamente. ¿Tu proceso mental?",
+    "5": "Necesitas tomar una decisión importante. ¿Cómo la manejas?",
+    "6": "¿Cómo piensas sobre el futuro?",
+    "7": "Estás sobrepensando justo ahora. ¿Cómo se ve ESO?",
     "0a": "Repitiendo esa cosa vergonzosa que dijiste hace 3 años",
     "0b": "Imaginando realidades alternas donde tomaste decisiones diferentes",
     "0c": "Ensayando la conversación de mañana palabra por palabra",
     "0d": "Listando todo lo que podría salir mal mañana",
-    "1": "Estás a punto de conocer a alguien nuevo. ¿Qué pasa en tu cabeza?",
     "1a": "Ensayas tu presentación 47 veces",
     "1b": "Analizas cada expresión facial durante la conversación",
     "1c": "Imaginas los 12 posibles resultados del encuentro",
     "1d": "Repites la conversación en tu cabeza durante 3 días seguidos",
-    "2": "Acabas de enviar un mensaje importante. ¿Y ahora?",
     "2a": "Lo relees 8 veces preguntándote si el punto suena enojado",
     "2b": "Imaginas todas las formas posibles en que podrían interpretar tus palabras",
     "2c": "Entras en pánico porque lo leyeron pero no han respondido",
     "2d": "Escribes 5 mensajes de seguimiento, no envías ninguno",
-    "3": "Algo estresante pasa en el trabajo. ¿Tu reacción?",
     "3a": "No puedes dormir — tu mente da vueltas toda la noche",
     "3b": "Saltas directamente a: me van a despedir, perderé mi casa, viviré en una van",
     "3c": "Construyes un plan de contingencia de 47 pasos para cada resultado posible",
     "3d": "Te obsesionas con lo que podrías haber hecho diferente",
-    "4": "Tu amigo/a parece distante últimamente. ¿Tu proceso mental?",
     "4a": "Analizas sus últimos 20 mensajes buscando significados ocultos",
     "4b": "Practicas '¿Estás enojado/a conmigo?' en 15 tonos diferentes",
     "4c": "Imaginas las 8 razones por las que podrían odiarte en secreto",
     "4d": "Te quedas despierto/a repasando cada interacción buscando pistas",
-    "5": "Necesitas tomar una decisión importante. ¿Cómo la manejas?",
     "5a": "Investigas obsesivamente hasta tener 47 pestañas del navegador abiertas",
     "5b": "Te enfocas únicamente en lo que podría salir mal con cada opción",
     "5c": "Le preguntas a todos los que conoces y luego sobreanalizas todos sus consejos",
     "5d": "Decides, y luego inmediatamente te cuestionas durante semanas",
-    "6": "¿Cómo piensas sobre el futuro?",
     "6a": "Catastrofizas sobre desastres improbables con todo detalle",
     "6b": "Creas simulaciones mentales detalladas de cada camino posible",
     "6c": "Pierdes el sueño por cosas que están literalmente a años de distancia",
     "6d": "Ensayas conversaciones hipotéticas futuras que tal vez nunca ocurran",
-    "7": "Estás sobrepensando justo ahora. ¿Cómo se ve ESO?",
     "7a": "Sobrepensando sobre cuánto sobrepiensas (¡inception!)",
     "7b": "Analizando exactamente POR QUÉ sobrepiensas todo",
     "7c": "Construyendo teorías sobre tus propios patrones de pensamiento",
     "7d": "Preocupándote de que sobrepensar eventualmente arruinará tu vida"
   },
   "quiz": {
-    "midQuiz": "¡Ya vas por la mitad! Tu perfil de sobrepensador está tomando forma..."
-  },
-  "analyzing": {
-    "title": "Analizando tus patrones de pensamiento...",
-    "step1": "Escaneando bucles de pensamiento...",
-    "step2": "Midiendo intensidad de espiral...",
-    "step3": "Detectando patrones nocturnos...",
-    "step4": "Calculando longitud de onda del sobrepensar...",
-    "step5": "¡Perfil completo!"
+    "choose": "Elige una respuesta"
   },
   "type": {
     "spiral": {
       "name": "Pensador Espiral de las 3 AM",
-      "tagline": "Tu cerebro no tiene botón de apagado, especialmente a las 2 AM.",
-      "description": "Eres el sobrepensador clásico cuya mente se acelera en el momento en que tu cabeza toca la almohada. Un pensamiento lleva a otro, que lleva a otro, hasta que estás contemplando el sentido de la vida a las 3 AM. Tus pensamientos no van en líneas — van en espirales, cada giro te jala más profundo. ¿Las buenas noticias? Tu mente nunca para, lo que significa que eres increíblemente minucioso/a y consciente de ti mismo/a.",
-      "trait1": "Pensador Nocturno",
-      "trait2": "Autorreflexión Profunda",
-      "trait3": "Maestro de Lógica Circular"
+      "tagline": "Tu cerebro no tiene botón de apagado, especialmente a las 2 AM."
     },
     "architect": {
       "name": "Arquitecto de Escenarios",
-      "tagline": "Ya planeaste 47 líneas temporales alternas.",
-      "description": "Tu cerebro es un motor de simulación. Antes de que algo suceda, ya imaginaste cada resultado posible, creaste planes de contingencia y mapeaste árboles de decisión. No solo piensas en lo que podría pasar — construyes mundos mentales enteros alrededor de las posibilidades. Mientras otros viven en una realidad, tú estás simultáneamente ejecutando escenarios en una docena de universos paralelos. Esto te hace un/a estratega y solucionador/a de problemas increíble.",
-      "trait1": "Planificador Estratégico",
-      "trait2": "Explorador de Posibilidades",
-      "trait3": "Simulador Mental"
+      "tagline": "Ya planeaste 47 líneas temporales alternas."
     },
     "rehearser": {
       "name": "Ensayador de Respuestas",
-      "tagline": "Ya practicaste esta conversación 12 veces.",
-      "description": "Cada conversación es una actuación que has ensayado docenas de veces. Escribes los mensajes en tu app de notas antes de enviarlos. Practicas respuestas a preguntas que nadie ha hecho. Sabes exactamente qué dirías si alguien sacara ese tema — porque preparaste un discurso de 3 minutos en la ducha. Tus conversaciones nunca son espontáneas, pero siempre están pulidas.",
-      "trait1": "Perfeccionista de la Comunicación",
-      "trait2": "Maestro de la Preparación",
-      "trait3": "Artesano de las Palabras"
+      "tagline": "Ya practicaste esta conversación 12 veces."
     },
     "analyst": {
       "name": "Analista de Microexpresiones",
-      "tagline": "¿Parpadearon dos veces? Eso significa algo.",
-      "description": "Lo notas todo. La ligera pausa antes de que alguien responda, el cambio apenas perceptible en su tono, la forma en que miraron su teléfono durante tu historia. Tu cerebro es una máquina de reconocimiento de patrones sintonizada para captar señales sociales que la mayoría no ve. Lees entre cada línea y detrás de cada sonrisa. Aunque puede ser agotador, también te hace increíblemente empático/a y emocionalmente inteligente.",
-      "trait1": "Experto en Comportamiento Humano",
-      "trait2": "Hiperobservador",
-      "trait3": "Inteligencia Emocional"
+      "tagline": "¿Parpadearon dos veces? Eso significa algo."
     },
     "catastrophizer": {
       "name": "Catastrofizador del Futuro",
-      "tagline": "¿Mi hobby? Imaginar escenarios catastróficos en 4K.",
-      "description": "Los problemas pequeños no existen en tu mundo — cada situación escala inmediatamente a su conclusión más dramática. ¿Dolor de cabeza? Probablemente un tumor cerebral. ¿El jefe quiere hablar? Te van a despedir. ¿Tu amigo no respondió? Te odia para siempre. Tu cerebro es un director de películas de desastre, siempre listo para producir la próxima catástrofe taquillera. Pero aquí está la cosa — también eres la persona más preparada en cualquier lugar porque ya sobreviviste cada peor escenario en tu cabeza.",
-      "trait1": "Experto en Peor Caso",
-      "trait2": "Preparación para Crisis",
-      "trait3": "Imaginación Vívida"
+      "tagline": "¿Mi hobby? Imaginar escenarios catastróficos en 4K."
     },
     "replayer": {
       "name": "Repetidor Selectivo de Memorias",
-      "tagline": "Todavía avergonzándote por algo de 2009.",
-      "description": "Tu cerebro es una máquina del tiempo que viaja exclusivamente a tus momentos más vergonzosos. ¿Esa cosa incómoda que dijiste en una fiesta en 2015? Cristalina. ¿Esa vez que saludaste a alguien que no te estaba saludando? Se repite cada noche. Tienes memoria fotográfica, pero solo para los momentos que preferirías olvidar. No recuerdas dónde dejaste las llaves, pero puedes recordar cada detalle vergonzoso de esa conversación de hace 7 años.",
-      "trait1": "Arqueólogo del Cringe",
-      "trait2": "Perfeccionista del Detalle",
-      "trait3": "Historiador Autoconsciente"
+      "tagline": "Todavía avergonzándote por algo de 2009."
     }
   },
   "result": {
-    "metricsTitle": "Tu perfil de sobrepensador",
-    "metric": {
-      "nightThinking": "Pensamiento Nocturno",
-      "loopIntensity": "Intensidad de Bucle",
-      "sleepImpact": "Impacto en el Sueño",
-      "creativity": "Impulso Creativo",
-      "anxiety": "Nivel de Ansiedad"
-    },
-    "percentile": "El {pct}% de sobrepensadores comparten tu tipo",
-    "shareTitle": "¡Comparte tu tipo de sobrepensador!",
-    "copyLink": "Copiar",
-    "moreTests": "Más Tests",
-    "retry": "Intentar de Nuevo"
+    "eyebrow": "Tu bucle más elegido",
+    "calculationTitle": "Qué significa el resultado",
+    "calculation": "Elegiste respuestas relacionadas con este bucle {points} de {total} veces.",
+    "boundary": "Solo resume estas ocho elecciones. No mide ansiedad, capacidad ni personalidad.",
+    "nextAction": "Revisar tu carga de estrés actual",
+    "share": "Compartir esta reflexión",
+    "retry": "Repetir",
+    "relatedTitle": "Continúa con una revisión enfocada"
   },
   "related": {
-    "emotionIceberg": "Iceberg Emocional",
-    "stressCheck": "Chequeo de Estrés",
-    "hspTest": "Test HSP",
-    "aiPersonality": "Personalidad AI",
-    "stressResponse": "Respuesta al Estrés",
-    "anxietyType": "Tipo de Ansiedad",
-    "eqTest": "Test de EQ",
-    "dopamineType": "Tipo de Dopamina"
+    "emotionIceberg": "Iceberg emocional",
+    "hspTest": "Reflexión sobre sensibilidad"
   },
   "share": {
-    "text": "¡Soy {emoji} {type}! ¿Qué tipo de sobrepensador eres? Descúbrelo:",
-    "copied": "¡Copiado!"
+    "text": "Una reflexión rápida de 8 preguntas sobre bucles mentales:",
+    "success": "Compartido o copiado.",
+    "failure": "No se puede compartir en este navegador."
   }
 }

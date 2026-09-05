@@ -1,154 +1,107 @@
 {
   "app": {
-    "skipLink": "Pular para o conteúdo principal",
-    "loading": "Carregando...",
-    "backHome": "DopaBrain Início"
+    "skipLink": "Ir para o conteúdo",
+    "backHome": "Voltar ao DopaBrain"
   },
   "intro": {
-    "title": "Que tipo de pensador excessivo você é?",
-    "hook": "Voce repassa conversas as 3 da manha? Ensaia mensagens antes de enviar?",
-    "subtitle": "Todo mundo pensa demais. Mas COMO você pensa demais diz muito sobre você.",
-    "socialProof": "Junte-se a <strong>14.200+</strong> pensadores excessivos",
-    "startBtn": "Descobrir meu estilo de pensar demais",
-    "timeEstimate": "~2 min • 8 perguntas",
-    "carousel1": "Pensador Espiral das 3 da Manhã",
-    "carousel2": "Arquiteto de Cenários",
-    "carousel3": "Ensaiador de Respostas",
-    "carousel4": "Analista de Microexpressões",
-    "feature1": "8 perguntas rápidas",
-    "feature2": "6 tipos únicos",
-    "feature3": "Dolorosamente identificável"
+    "eyebrow": "Reflexão de 8 perguntas",
+    "title": "Qual ciclo de pensamento aparece mais?",
+    "hook": "Escolha a resposta mais próxima do que você costuma fazer. Não há respostas certas.",
+    "boundaryTitle": "O que isso pode mostrar",
+    "boundary": "É um retrato leve das suas respostas, não uma avaliação de saúde mental nem um rótulo fixo de personalidade.",
+    "startBtn": "Iniciar a reflexão",
+    "timeEstimate": "Cerca de 1 minuto · 8 perguntas",
+    "methodTitle": "Como o resultado é calculado",
+    "method": "Cada resposta soma um ponto ao ciclo descrito. Mostramos o mais escolhido; em empate, vale o primeiro na ordem das perguntas."
   },
   "question": {
     "0": "São 2 da manhã e você não consegue dormir. O que seu cérebro está fazendo?",
+    "1": "Você vai conhecer alguém novo. O que acontece na sua cabeça?",
+    "2": "Você acabou de enviar uma mensagem importante. E agora?",
+    "3": "Algo estressante acontece no trabalho. Sua reação?",
+    "4": "Seu amigo parece distante ultimamente. Seu processo mental?",
+    "5": "Você precisa tomar uma decisão importante. Como lida com isso?",
+    "6": "Como você pensa sobre o futuro?",
+    "7": "Você está pensando demais agora mesmo. Como ISSO se parece?",
     "0a": "Repassando aquela coisa vergonhosa que você disse 3 anos atrás",
     "0b": "Imaginando linhas do tempo alternativas onde você fez escolhas diferentes",
     "0c": "Ensaiando a conversa de amanhã palavra por palavra",
     "0d": "Listando tudo que pode dar errado amanhã",
-    "1": "Você vai conhecer alguém novo. O que acontece na sua cabeça?",
     "1a": "Ensaia sua apresentação 47 vezes",
     "1b": "Analisa cada expressão facial durante a conversa",
     "1c": "Imagina todos os 12 resultados possíveis do encontro",
     "1d": "Repassa a conversa por 3 dias seguidos depois",
-    "2": "Você acabou de enviar uma mensagem importante. E agora?",
     "2a": "Relê 8 vezes pensando se o ponto final soa agressivo",
     "2b": "Imagina todas as formas possíveis que podem interpretar suas palavras",
     "2c": "Entra em pânico porque leram mas não responderam",
     "2d": "Escreve 5 mensagens de follow-up, não envia nenhuma",
-    "3": "Algo estressante acontece no trabalho. Sua reação?",
     "3a": "Não consegue dormir — sua mente roda em círculos a noite toda",
     "3b": "Pula direto para: vou ser demitido, perder minha casa, morar numa van",
     "3c": "Constrói um plano de contingência de 47 passos para cada resultado possível",
     "3d": "Fica obcecado com o que poderia ter feito diferente",
-    "4": "Seu amigo parece distante ultimamente. Seu processo mental?",
     "4a": "Analisa as últimas 20 mensagens em busca de significados ocultos",
     "4b": "Pratica 'Você está com raiva de mim?' em 15 tons diferentes",
     "4c": "Imagina as 8 razões pelas quais podem te odiar secretamente",
     "4d": "Fica acordado repassando cada interação em busca de pistas",
-    "5": "Você precisa tomar uma decisão importante. Como lida com isso?",
     "5a": "Pesquisa obsessivamente até ter 47 abas do navegador abertas",
     "5b": "Foca inteiramente no que pode dar errado com cada opção",
     "5c": "Pergunta a todos que conhece, depois analisa demais todos os conselhos",
     "5d": "Decide, e imediatamente se questiona por semanas",
-    "6": "Como você pensa sobre o futuro?",
     "6a": "Catastrofiza sobre desastres improváveis em detalhes vívidos",
     "6b": "Cria simulações mentais detalhadas de cada caminho possível",
     "6c": "Perde o sono por coisas que estão literalmente a anos de distância",
     "6d": "Ensaia conversas hipotéticas futuras que podem nunca acontecer",
-    "7": "Você está pensando demais agora mesmo. Como ISSO se parece?",
     "7a": "Pensando demais sobre o quanto você pensa demais (inception!)",
     "7b": "Analisando exatamente POR QUE você pensa demais sobre tudo",
     "7c": "Construindo teorias sobre seus próprios padrões de pensamento",
     "7d": "Preocupando-se que pensar demais vai eventualmente arruinar sua vida"
   },
   "quiz": {
-    "midQuiz": "Metade do caminho! Seu perfil de pensador excessivo está tomando forma..."
-  },
-  "analyzing": {
-    "title": "Analisando seus padrões de pensamento...",
-    "step1": "Escaneando loops de pensamento...",
-    "step2": "Medindo intensidade da espiral...",
-    "step3": "Detectando padrões noturnos...",
-    "step4": "Calculando comprimento de onda do pensar demais...",
-    "step5": "Perfil completo!"
+    "choose": "Escolha uma resposta"
   },
   "type": {
     "spiral": {
       "name": "Pensador Espiral das 3 da Manhã",
-      "tagline": "Seu cérebro não tem botão de desligar, especialmente às 2 da manhã.",
-      "description": "Você é o pensador excessivo clássico cuja mente acelera no momento em que a cabeça toca o travesseiro. Um pensamento leva a outro, que leva a outro, até você estar contemplando o sentido da vida às 3 da manhã. Seus pensamentos não vão em linhas — vão em espirais, cada volta te puxando mais fundo. A boa notícia? Sua mente nunca para, o que significa que você é incrivelmente detalhista e autoconsciente.",
-      "trait1": "Pensador Noturno",
-      "trait2": "Autorreflexão Profunda",
-      "trait3": "Mestre da Lógica Circular"
+      "tagline": "Seu cérebro não tem botão de desligar, especialmente às 2 da manhã."
     },
     "architect": {
       "name": "Arquiteto de Cenários",
-      "tagline": "Você já planejou 47 linhas temporais alternativas.",
-      "description": "Seu cérebro é um motor de simulação. Antes de qualquer coisa acontecer, você já imaginou cada resultado possível, criou planos de contingência e mapeou árvores de decisão. Você não apenas pensa no que pode acontecer — constrói mundos mentais inteiros ao redor das possibilidades. Enquanto outros vivem em uma realidade, você está simultaneamente rodando cenários em uma dúzia de universos paralelos. Isso faz de você um estrategista e solucionador de problemas incrível.",
-      "trait1": "Planejador Estratégico",
-      "trait2": "Explorador de Possibilidades",
-      "trait3": "Simulador Mental"
+      "tagline": "Você já planejou 47 linhas temporais alternativas."
     },
     "rehearser": {
       "name": "Ensaiador de Respostas",
-      "tagline": "Você já praticou esta conversa 12 vezes.",
-      "description": "Cada conversa é uma performance que você ensaiou dezenas de vezes. Você escreve mensagens no app de notas antes de enviar. Pratica respostas para perguntas que ninguém fez. Sabe exatamente o que diria se alguém mencionasse aquele assunto — porque preparou um discurso de 3 minutos no banho. Suas conversas nunca são espontâneas, mas sempre são polidas.",
-      "trait1": "Perfeccionista da Comunicação",
-      "trait2": "Mestre da Preparação",
-      "trait3": "Artesão das Palavras"
+      "tagline": "Você já praticou esta conversa 12 vezes."
     },
     "analyst": {
       "name": "Analista de Microexpressões",
-      "tagline": "Piscaram duas vezes? Isso significa algo.",
-      "description": "Você percebe tudo. A leve pausa antes de alguém responder, a mudança quase imperceptível no tom, o jeito que olharam para o celular durante sua história. Seu cérebro é uma máquina de reconhecimento de padrões sintonizada para captar sinais sociais que a maioria não percebe. Você lê nas entrelinhas e por trás de cada sorriso. Embora isso possa ser exaustivo, também te torna incrivelmente empático e emocionalmente inteligente.",
-      "trait1": "Especialista em Comportamento Humano",
-      "trait2": "Hiperobservador",
-      "trait3": "Inteligência Emocional"
+      "tagline": "Piscaram duas vezes? Isso significa algo."
     },
     "catastrophizer": {
       "name": "Catastrofizador do Futuro",
-      "tagline": "Meu hobby? Imaginar cenários de pior caso em 4K.",
-      "description": "Problemas pequenos não existem no seu mundo — cada questão escala imediatamente para sua conclusão mais dramática. Dor de cabeça? Provavelmente um tumor cerebral. Chefe quer conversar? Você vai ser demitido. Amigo não respondeu? Te odeia para sempre. Seu cérebro é um diretor de filmes de desastre, sempre pronto para produzir a próxima catástrofe blockbuster. Mas aqui está o ponto — você também é a pessoa mais preparada em qualquer lugar porque já sobreviveu cada pior cenário na sua cabeça.",
-      "trait1": "Especialista em Pior Caso",
-      "trait2": "Preparação para Crises",
-      "trait3": "Imaginação Vívida"
+      "tagline": "Meu hobby? Imaginar cenários de pior caso em 4K."
     },
     "replayer": {
       "name": "Repetidor Seletivo de Memórias",
-      "tagline": "Ainda morrendo de vergonha de algo de 2009.",
-      "description": "Seu cérebro é uma máquina do tempo que viaja exclusivamente para seus momentos mais vergonhosos. Aquela coisa estranha que você disse numa festa em 2015? Cristalina. Aquela vez que acenou de volta para alguém que não estava acenando? Replay todas as noites. Você tem memória fotográfica, mas apenas para momentos que preferiria esquecer. Não lembra onde colocou as chaves, mas consegue lembrar cada detalhe constrangedor daquela conversa de 7 anos atrás.",
-      "trait1": "Arqueólogo do Cringe",
-      "trait2": "Perfeccionista do Detalhe",
-      "trait3": "Historiador Autoconsciente"
+      "tagline": "Ainda morrendo de vergonha de algo de 2009."
     }
   },
   "result": {
-    "metricsTitle": "Seu perfil de pensador excessivo",
-    "metric": {
-      "nightThinking": "Pensamento Noturno",
-      "loopIntensity": "Intensidade do Loop",
-      "sleepImpact": "Impacto no Sono",
-      "creativity": "Impulso Criativo",
-      "anxiety": "Nível de Ansiedade"
-    },
-    "percentile": "{pct}% dos pensadores excessivos compartilham seu tipo",
-    "shareTitle": "Compartilhe seu tipo de pensador excessivo!",
-    "copyLink": "Copiar",
-    "moreTests": "Mais Testes",
-    "retry": "Tentar de Novo"
+    "eyebrow": "Seu ciclo mais escolhido",
+    "calculationTitle": "O que o resultado significa",
+    "calculation": "Você escolheu respostas ligadas a este ciclo {points} de {total} vezes.",
+    "boundary": "Resume apenas estas oito escolhas. Não mede ansiedade, capacidade ou personalidade.",
+    "nextAction": "Verificar sua carga de estresse atual",
+    "share": "Compartilhar esta reflexão",
+    "retry": "Tentar novamente",
+    "relatedTitle": "Continue com uma verificação focada"
   },
   "related": {
-    "emotionIceberg": "Iceberg Emocional",
-    "stressCheck": "Teste de Estresse",
-    "hspTest": "Teste HSP",
-    "aiPersonality": "Personalidade AI",
-    "stressResponse": "Resposta ao Estresse",
-    "anxietyType": "Tipo de Ansiedade",
-    "eqTest": "Teste de QE",
-    "dopamineType": "Tipo de Dopamina"
+    "emotionIceberg": "Iceberg emocional",
+    "hspTest": "Reflexão sobre sensibilidade"
   },
   "share": {
-    "text": "Eu sou {emoji} {type}! Que tipo de pensador excessivo você é? Descubra:",
-    "copied": "Copiado!"
+    "text": "Uma reflexão rápida de 8 perguntas sobre ciclos mentais:",
+    "success": "Compartilhado ou copiado.",
+    "failure": "O compartilhamento não está disponível neste navegador."
   }
 }

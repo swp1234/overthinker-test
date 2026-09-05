@@ -1,154 +1,107 @@
 {
   "app": {
     "skipLink": "Ana içeriğe geç",
-    "loading": "Yükleniyor...",
-    "backHome": "DopaBrain Ana Sayfa"
+    "backHome": "DopaBrain’e dön"
   },
   "intro": {
-    "title": "Sen Ne Tür Bir Aşırı Düşünücüsün?",
-    "hook": "Gece 3'te konusmalari tekrar mi ediyorsunuz? Mesaj gondermeden once prova mi yapiyorsunuz?",
-    "subtitle": "Herkes aşırı düşünür. Ama NASIL düşündüğün senin hakkında çok şey söylüyor.",
-    "socialProof": "<strong>14.200+</strong> aşırı düşünücüye katıl",
-    "startBtn": "Aşırı Düşünme Stilimi Keşfet",
-    "timeEstimate": "~2 dk • 8 soru",
-    "carousel1": "Gece 3 Spiral Düşünür",
-    "carousel2": "Senaryo Mimarı",
-    "carousel3": "Cevap Provacsısı",
-    "carousel4": "Mikro-İfade Analisti",
-    "feature1": "8 Hızlı Soru",
-    "feature2": "6 Benzersiz Tür",
-    "feature3": "Acı Verecek Kadar Tanıdık"
+    "eyebrow": "8 soruluk düşünme molası",
+    "title": "Hangi düşünce döngüsü daha sık beliriyor?",
+    "hook": "Genelde yaptığınıza en yakın cevabı seçin. Doğru cevap yoktur.",
+    "boundaryTitle": "Bu sonuç ne anlatır",
+    "boundary": "Yanıtlarınızın eğlenceli bir anlık özetidir; ruh sağlığı değerlendirmesi veya sabit kişilik etiketi değildir.",
+    "startBtn": "Düşünme molasını başlat",
+    "timeEstimate": "Yaklaşık 1 dakika · 8 soru",
+    "methodTitle": "Sonuç nasıl hesaplanır",
+    "method": "Her yanıt, anlattığı düşünce döngüsüne bir puan ekler. En çok seçilen gösterilir; eşitlikte soru sırasındaki ilk döngü kullanılır."
   },
   "question": {
     "0": "Gece 2 ve uyuyamıyorsun. Beynin ne yapıyor?",
+    "1": "Yeni biriyle tanışmak üzeresin. Kafanın içinde neler oluyor?",
+    "2": "Az önce önemli bir mesaj gönderdin. Şimdi ne olacak?",
+    "3": "İşte stresli bir şey oldu. Tepkin?",
+    "4": "Arkadaşın son zamanlarda mesafeli görünüyor. Düşünce sürecin?",
+    "5": "Önemli bir karar vermen gerekiyor. Nasıl başa çıkıyorsun?",
+    "6": "Gelecek hakkında nasıl düşünüyorsun?",
+    "7": "Şu an aşırı düşünüyorsun. Bu NASIL görünüyor?",
     "0a": "3 yıl önce söylediğin utanç verici şeyi tekrar tekrar oynuyor",
     "0b": "Farklı seçimler yaptığın alternatif zaman çizgileri hayal ediyor",
     "0c": "Yarınki konuşmayı kelime kelime prova ediyor",
     "0d": "Yarın ters gidebilecek her şeyi listeliyor",
-    "1": "Yeni biriyle tanışmak üzeresin. Kafanın içinde neler oluyor?",
     "1a": "Tanıtımını 47 kere prova ediyorsun",
     "1b": "Konuşma sırasında her yüz ifadesini analiz ediyorsun",
     "1c": "Buluşmanın 12 olası sonucunu hayal ediyorsun",
     "1d": "Konuşmayı 3 gün boyunca aralıksız tekrar ediyorsun",
-    "2": "Az önce önemli bir mesaj gönderdin. Şimdi ne olacak?",
     "2a": "Noktanın kızgın görünüp görünmediğini merak ederek 8 kere tekrar okuyorsun",
     "2b": "Sözlerini yorumlayabilecekleri her olası yolu hayal ediyorsun",
     "2c": "Okudular ama cevap vermediler diye panik yapıyorsun",
     "2d": "5 takip mesajı yazıyorsun, hiçbirini göndermiyorsun",
-    "3": "İşte stresli bir şey oldu. Tepkin?",
     "3a": "Uyuyamıyorsun — zihnin bütün gece dönüp duruyor",
     "3b": "Hemen atlıyorsun: kovulacağım → evimi kaybedeceğim → minibüste yaşayacağım",
     "3c": "Her olası sonuç için 47 adımlık acil durum planı kuruyorsun",
     "3d": "Neyi farklı yapabilirdim diye kafayı yiyorsun",
-    "4": "Arkadaşın son zamanlarda mesafeli görünüyor. Düşünce sürecin?",
     "4a": "Son 20 mesajını gizli anlam için analiz ediyorsun",
     "4b": "'Bana kızgın mısın?' cümlesini 15 farklı tonda prova ediyorsun",
     "4c": "Senden gizlice nefret edebilecekleri 8 nedeni hayal ediyorsun",
     "4d": "İpucu arayarak her etkileşimi tekrar ederek uyanık yatıyorsun",
-    "5": "Önemli bir karar vermen gerekiyor. Nasıl başa çıkıyorsun?",
     "5a": "47 tarayıcı sekmesi açılana kadar saplantılı şekilde araştırıyorsun",
     "5b": "Her seçenekte neyin yanlış gidebileceğine tamamen odaklanıyorsun",
     "5c": "Tanıdığın herkese soruyorsun, sonra tüm tavsiyeleri aşırı analiz ediyorsun",
     "5d": "Karar veriyorsun, sonra haftalarca kendinden şüphe ediyorsun",
-    "6": "Gelecek hakkında nasıl düşünüyorsun?",
     "6a": "Olası olmayan felaketleri canlı detaylarla katastrofize ediyorsun",
     "6b": "Her olası yol için detaylı zihinsel simülasyonlar oluşturuyorsun",
     "6c": "Yıllar sonraki şeyler yüzünden uykunu kaybediyorsun",
     "6d": "Asla gerçekleşmeyebilecek varsayımsal gelecek konuşmalarını prova ediyorsun",
-    "7": "Şu an aşırı düşünüyorsun. Bu NASIL görünüyor?",
     "7a": "Ne kadar aşırı düşündüğünü aşırı düşünmek (inception!)",
     "7b": "Her şeyi NEDEN aşırı düşündüğünü tam olarak analiz etmek",
     "7c": "Kendi düşünce kalıpların hakkında teoriler kurmak",
     "7d": "Aşırı düşünmenin sonunda hayatını mahvedeceğinden endişelenmek"
   },
   "quiz": {
-    "midQuiz": "Yarısına geldin! Aşırı düşünme profilin şekilleniyor..."
-  },
-  "analyzing": {
-    "title": "Düşünce kalıpların analiz ediliyor...",
-    "step1": "Düşünce döngüleri taranıyor...",
-    "step2": "Spiral yoğunluğu ölçülüyor...",
-    "step3": "Gece kalıpları tespit ediliyor...",
-    "step4": "Aşırı düşünme dalga boyu hesaplanıyor...",
-    "step5": "Profil tamamlandı!"
+    "choose": "Bir cevap seçin"
   },
   "type": {
     "spiral": {
       "name": "Gece 3 Spiral Düşünür",
-      "tagline": "Beyninin kapatma düğmesi yok, özellikle gece 2'de.",
-      "description": "Başın yastığa değdiği an beyni turbo moduna geçen klasik aşırı düşünücüsün. Bir düşünce diğerine, o da bir diğerine yol açar, ta ki gece 3'te hayatın anlamını düşünene kadar. Düşüncelerin düz çizgide değil — spiral şeklinde ilerler, her döngü seni daha derine çeker. İyi haber? Beynin hiç durmaz, bu da inanılmaz titiz ve öz farkındalığı yüksek olduğun anlamına gelir.",
-      "trait1": "Gece Kuşu Düşünür",
-      "trait2": "Derin Öz Yansıtma",
-      "trait3": "Döngüsel Mantık Ustası"
+      "tagline": "Beyninin kapatma düğmesi yok, özellikle gece 2'de."
     },
     "architect": {
       "name": "Senaryo Mimarı",
-      "tagline": "47 alternatif zaman çizgisi çoktan planlandı.",
-      "description": "Beynin bir simülasyon motoru. Herhangi bir şey olmadan önce, her olası sonucu hayal ettin, acil durum planları oluşturdun ve karar ağaçlarını çizdin. Sadece ne olabileceğini düşünmüyorsun — olasılıkların etrafında bütün zihinsel dünyalar inşa ediyorsun. Başkaları tek bir gerçeklikte yaşarken, sen eş zamanlı olarak düzinelerce paralel evrende senaryolar çalıştırıyorsun. Bu seni inanılmaz bir stratejist ve problem çözücü yapıyor.",
-      "trait1": "Stratejik Planlamacı",
-      "trait2": "Olasılık Kaşifi",
-      "trait3": "Zihinsel Simülatör"
+      "tagline": "47 alternatif zaman çizgisi çoktan planlandı."
     },
     "rehearser": {
       "name": "Cevap Provacısı",
-      "tagline": "Bu konuşmayı zaten 12 kere prova ettin.",
-      "description": "Her konuşma düzinelerce kez prova ettiğin bir performans. Mesajları göndermeden önce notlar uygulamasında yazıyorsun. Kimsenin sormadığı sorulara cevap prova ediyorsun. Biri o konuyu açsa ne diyeceğini tam olarak biliyorsun — çünkü duşta 3 dakikalık bir konuşma hazırladın. Konuşmaların asla spontan değil ama her zaman cilalı.",
-      "trait1": "İletişim Mükemmelliyetçisi",
-      "trait2": "Hazırlık Ustası",
-      "trait3": "Sözcük Zanaatkârı"
+      "tagline": "Bu konuşmayı zaten 12 kere prova ettin."
     },
     "analyst": {
       "name": "Mikro-İfade Analisti",
-      "tagline": "İki kere göz kırptılar mı? Bunun bir anlamı var.",
-      "description": "Her şeyi fark ediyorsun. Birinin cevap vermeden önceki hafif duraklaması, neredeyse algılanamayan ton değişikliği, hikâyen sırasında telefonlarına bakmaları. Beynin çoğu insanın kaçırdığı sosyal sinyalleri yakalamak için ayarlanmış bir örüntü tanıma makinesi. Her satır arasını ve her gülümsemenin arkasını okuyorsun. Bu yorucu olabilir ama aynı zamanda inanılmaz empatik ve duygusal zekâ sahibi olduğun anlamına gelir.",
-      "trait1": "İnsan Davranışı Uzmanı",
-      "trait2": "Hiper-Gözlemci",
-      "trait3": "Duygusal Zekâ"
+      "tagline": "İki kere göz kırptılar mı? Bunun bir anlamı var."
     },
     "catastrophizer": {
       "name": "Gelecek Katastrofisti",
-      "tagline": "Hobim? En kötü senaryoları 4K'da hayal etmek.",
-      "description": "Senin dünyanda küçük sorun diye bir şey yok — her mesele anında en dramatik sonucuna tırmanır. Baş ağrısı? Muhtemelen beyin tümörü. Patron konuşmak istiyor? Kovuluyorsun. Arkadaş mesaja cevap vermedi? Senden sonsuza kadar nefret ediyor. Beynin bir sonraki gişe rekorları kıran felaketi üretmeye hazır bir felaket filmi yönetmeni. Ama mesele şu — aynı zamanda herhangi bir odadaki en hazırlıklı kişisin çünkü her en kötü senaryoyu kafanda çoktan atlatmışsın.",
-      "trait1": "En Kötü Durum Uzmanı",
-      "trait2": "Kriz Hazırlığı",
-      "trait3": "Canlı Hayal Gücü"
+      "tagline": "Hobim? En kötü senaryoları 4K'da hayal etmek."
     },
     "replayer": {
       "name": "Seçici Hafıza Tekrarlayıcısı",
-      "tagline": "2009'dan bir şey yüzünden hâlâ utanç duyuyorsun.",
-      "description": "Beynin sadece en utanç verici anlarına seyahat eden bir zaman makinesi. 2015'te bir partide söylediğin o garip şey? Kristal berraklığında. El sallamamış birine el salladığın an? Her gece tekrarlanıyor. Fotoğrafik hafızan var ama sadece unutmak istediğin anlar için çalışıyor. Anahtarlarını nereye koyduğunu hatırlamıyorsun ama 7 yıl önceki konuşmanın her utanç verici detayını hatırlıyorsun.",
-      "trait1": "Cringe Arkeologu",
-      "trait2": "Detay Mükemmelliyetçisi",
-      "trait3": "Öz Farkındalıklı Tarihçi"
+      "tagline": "2009'dan bir şey yüzünden hâlâ utanç duyuyorsun."
     }
   },
   "result": {
-    "metricsTitle": "Aşırı Düşünme Profilin",
-    "metric": {
-      "nightThinking": "Gece Düşünmesi",
-      "loopIntensity": "Döngü Yoğunluğu",
-      "sleepImpact": "Uyku Etkisi",
-      "creativity": "Yaratıcılık Artışı",
-      "anxiety": "Kaygı Seviyesi"
-    },
-    "percentile": "Aşırı düşünücülerin {pct}%'i senin tipinde",
-    "shareTitle": "Aşırı düşünme tipini paylaş!",
-    "copyLink": "Kopyala",
-    "moreTests": "Daha Fazla Test",
-    "retry": "Tekrar Dene"
+    "eyebrow": "En çok seçtiğiniz döngü",
+    "calculationTitle": "Sonucun anlamı",
+    "calculation": "{total} seçimin {points} tanesi bu döngüyle bağlantılıydı.",
+    "boundary": "Yalnızca bu sekiz seçimi özetler. Kaygı, yetenek veya kişiliği ölçmez.",
+    "nextAction": "Mevcut stres yükünü kontrol et",
+    "share": "Bu düşünme molasını paylaş",
+    "retry": "Tekrar dene",
+    "relatedTitle": "Odaklı bir kontrolle devam et"
   },
   "related": {
     "emotionIceberg": "Duygu Buzdağı",
-    "stressCheck": "Stres Kontrolü",
-    "hspTest": "HSP Testi",
-    "aiPersonality": "AI Kişiliği",
-    "stressResponse": "Stres Tepkisi",
-    "anxietyType": "Kaygı Tipi",
-    "eqTest": "EQ Testi",
-    "dopamineType": "Dopamin Tipi"
+    "hspTest": "Hassasiyet Üzerine Düşünme"
   },
   "share": {
-    "text": "Ben bir {emoji} {type}! Sen ne tür bir aşırı düşünücüsün? Öğren:",
-    "copied": "Kopyalandı!"
+    "text": "8 soruluk kısa bir düşünce döngüsü değerlendirmesi:",
+    "success": "Paylaşıldı veya kopyalandı.",
+    "failure": "Bu tarayıcıda paylaşım kullanılamıyor."
   }
 }

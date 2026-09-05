@@ -1,446 +1,187 @@
-// Overthinker Test - Quiz Engine
-(function() {
+(function(){
 'use strict';
 
-const TOTAL_QUESTIONS = 8;
-const t = (key) => window.i18n ? window.i18n.t(key) : key;
-
-// 6 types: spiral, architect, rehearser, analyst, catastrophizer, replayer
-const TYPES = {
-  spiral: {
-    id: 'spiral', emoji: '🌀', color: '#7c3aed',
-    metrics: { nightThinking: 95, loopIntensity: 90, sleepImpact: 85, creativity: 70, anxiety: 80 }
-  },
-  architect: {
-    id: 'architect', emoji: '🏗️', color: '#3b82f6',
-    metrics: { nightThinking: 60, loopIntensity: 75, sleepImpact: 50, creativity: 95, anxiety: 55 }
-  },
-  rehearser: {
-    id: 'rehearser', emoji: '💬', color: '#10b981',
-    metrics: { nightThinking: 65, loopIntensity: 80, sleepImpact: 55, creativity: 70, anxiety: 75 }
-  },
-  analyst: {
-    id: 'analyst', emoji: '🔍', color: '#f59e0b',
-    metrics: { nightThinking: 50, loopIntensity: 70, sleepImpact: 40, creativity: 60, anxiety: 65 }
-  },
-  catastrophizer: {
-    id: 'catastrophizer', emoji: '⚡', color: '#ef4444',
-    metrics: { nightThinking: 80, loopIntensity: 85, sleepImpact: 75, creativity: 50, anxiety: 95 }
-  },
-  replayer: {
-    id: 'replayer', emoji: '🔄', color: '#8b5cf6',
-    metrics: { nightThinking: 85, loopIntensity: 95, sleepImpact: 70, creativity: 55, anxiety: 70 }
-  }
-};
-
-const QUESTIONS = [
-  { id: 0, icon: '🌙', dimension: 'night',
-    questionKey: 'question.0',
-    options: ['question.0a', 'question.0b', 'question.0c', 'question.0d'] },
-  { id: 1, icon: '💬', dimension: 'social',
-    questionKey: 'question.1',
-    options: ['question.1a', 'question.1b', 'question.1c', 'question.1d'] },
-  { id: 2, icon: '📱', dimension: 'digital',
-    questionKey: 'question.2',
-    options: ['question.2a', 'question.2b', 'question.2c', 'question.2d'] },
-  { id: 3, icon: '😰', dimension: 'stress',
-    questionKey: 'question.3',
-    options: ['question.3a', 'question.3b', 'question.3c', 'question.3d'] },
-  { id: 4, icon: '🤝', dimension: 'relationship',
-    questionKey: 'question.4',
-    options: ['question.4a', 'question.4b', 'question.4c', 'question.4d'] },
-  { id: 5, icon: '🎯', dimension: 'decision',
-    questionKey: 'question.5',
-    options: ['question.5a', 'question.5b', 'question.5c', 'question.5d'] },
-  { id: 6, icon: '🔮', dimension: 'future',
-    questionKey: 'question.6',
-    options: ['question.6a', 'question.6b', 'question.6c', 'question.6d'] },
-  { id: 7, icon: '💭', dimension: 'meta',
-    questionKey: 'question.7',
-    options: ['question.7a', 'question.7b', 'question.7c', 'question.7d'] }
+const TOTAL=8;
+const TYPES=['spiral','architect','rehearser','analyst','catastrophizer','replayer'];
+const ICONS=['↻','◇','…','⌁','△','◴'];
+const QUESTIONS=Array.from({length:TOTAL},(_,id)=>({id,questionKey:`question.${id}`,options:[0,1,2,3].map(n=>`question.${id}${'abcd'[n]}`)}));
+const ANSWER_TYPE=[
+  [5,1,2,4], [2,3,1,5], [3,1,0,2], [0,4,1,5],
+  [3,2,1,0], [1,4,3,5], [4,1,0,2], [0,3,1,4]
 ];
+const tracked=new Set();
+const t=key=>window.i18n?window.i18n.t(key):key;
+const format=(text,vars)=>Object.entries(vars).reduce((value,[key,replacement])=>value.replaceAll(`{${key}}`,replacement),text);
 
-// Score mapping: each option gives points to [spiral, architect, rehearser, analyst, catastrophizer, replayer]
-const SCORE_MAP = {
-  '0a': [3, 0, 1, 0, 2, 1], // replay embarrassing moments
-  '0b': [2, 3, 0, 0, 1, 0], // imagine alternate scenarios
-  '0c': [0, 0, 3, 1, 0, 2], // rehearse tomorrow's conversations
-  '0d': [1, 1, 0, 0, 3, 0], // worry about everything that could go wrong
-  '1a': [0, 0, 3, 2, 0, 1], // rehearse what to say beforehand
-  '1b': [1, 0, 0, 3, 0, 0], // analyze everyone's micro-expressions
-  '1c': [0, 3, 0, 0, 2, 0], // imagine all possible conversation outcomes
-  '1d': [2, 0, 1, 0, 0, 3], // replay the conversation afterwards
-  '2a': [0, 0, 0, 3, 1, 2], // re-read sent messages multiple times
-  '2b': [1, 3, 0, 0, 2, 0], // imagine how they'll interpret your message
-  '2c': [3, 0, 2, 0, 0, 1], // spiral about why they haven't replied
-  '2d': [0, 0, 3, 1, 0, 0], // draft and re-draft before sending
-  '3a': [3, 1, 0, 0, 2, 0], // can't sleep, mind races in circles
-  '3b': [0, 0, 0, 0, 3, 2], // jump to worst-case scenarios
-  '3c': [0, 3, 0, 1, 0, 0], // build elaborate contingency plans
-  '3d': [1, 0, 0, 0, 0, 3], // obsess over past mistakes
-  '4a': [0, 0, 0, 3, 0, 2], // analyze their tone of voice obsessively
-  '4b': [2, 0, 3, 0, 0, 1], // practice difficult conversations in your head
-  '4c': [0, 3, 0, 0, 2, 0], // imagine every possible reaction they might have
-  '4d': [3, 0, 0, 0, 1, 0], // lie awake thinking about what you should have said
-  '5a': [0, 3, 0, 0, 2, 0], // research every option exhaustively
-  '5b': [0, 0, 0, 0, 3, 1], // focus on what could go wrong with each choice
-  '5c': [2, 0, 0, 3, 0, 0], // ask everyone's opinion and overanalyze advice
-  '5d': [0, 0, 2, 0, 0, 3], // keep second-guessing after deciding
-  '6a': [0, 0, 0, 0, 3, 0], // catastrophize about unlikely disasters
-  '6b': [0, 3, 2, 0, 0, 0], // create detailed mental simulations
-  '6c': [3, 0, 0, 0, 1, 2], // lose sleep over things years away
-  '6d': [0, 0, 3, 1, 0, 0], // rehearse hypothetical future conversations
-  '7a': [3, 0, 0, 0, 2, 1], // overthink about how much you overthink
-  '7b': [0, 0, 0, 3, 0, 2], // analyze WHY you overthink
-  '7c': [0, 3, 0, 0, 0, 0], // build theories about your own thought patterns
-  '7d': [0, 0, 2, 0, 3, 0]  // worry that overthinking will ruin your life
-};
+function track(stage){
+  if(tracked.has(stage))return;
+  tracked.add(stage);
+  if(typeof window.gtag==='function')window.gtag('event',`overthinker_${stage}`,{event_category:'overthinker_reflection'});
+}
 
-class OverthinkerQuiz {
-  constructor() {
-    this.currentQuestion = 0;
-    this.scores = [0, 0, 0, 0, 0, 0]; // spiral, architect, rehearser, analyst, catastrophizer, replayer
-    this.answers = [];
-    this.carouselIdx = 0;
-    this.entrySurface = new URLSearchParams(window.location.search).get('surface') || 'direct';
-    this.autoStartConsumed = false;
-    this.resultViewTracked = false;
-    this.resultAdLoaded = false;
-    this.init();
+class Reflection{
+  constructor(){
+    this.index=0;
+    this.scores=Array(TYPES.length).fill(0);
+    this.answers=[];
+    this.locked=false;
+    this.bind();
+    this.syncRoutes();
+    Promise.resolve(window.i18n&&window.i18n.ready).finally(()=>{
+      this.syncRoutes();
+      track('view');
+    });
   }
 
-  init() {
-    // Hide loader immediately
-    const loader = document.getElementById('app-loader');
-    if (loader) { loader.classList.add('hidden'); setTimeout(() => loader.remove(), 300); }
-
-    // Theme
-    this.initTheme();
-    // Language
-    this.initLangSelector();
-    // Carousel
-    this.initCarousel();
-    // Buttons
-    document.getElementById('start-btn').addEventListener('click', () => this.startQuiz('intro_button'));
-    document.getElementById('retry-btn').addEventListener('click', () => this.retryQuiz());
-    // Share
-    document.getElementById('share-kakao').addEventListener('click', () => this.shareKakao());
-    document.getElementById('share-twitter').addEventListener('click', () => this.shareTwitter());
-    document.getElementById('share-facebook').addEventListener('click', () => this.shareFacebook());
-    document.getElementById('share-copy').addEventListener('click', () => this.shareCopy());
-    this.tryAutoStart();
+  bind(){
+    document.getElementById('start-btn').addEventListener('click',()=>this.start());
+    document.getElementById('retry-btn').addEventListener('click',()=>this.retry());
+    document.getElementById('share-page').addEventListener('click',()=>this.share());
+    document.getElementById('next-action').addEventListener('click',()=>track('next_click'));
+    document.querySelectorAll('[data-related-slug]').forEach(link=>link.addEventListener('click',()=>track('related_click')));
+    this.bindTheme();
+    this.bindLanguage();
   }
 
-  initTheme() {
-    const saved = localStorage.getItem('theme');
-    if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
-    const btn = document.getElementById('theme-toggle');
-    btn.addEventListener('click', () => {
-      const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-      if (isLight) {
-        document.documentElement.removeAttribute('data-theme');
-        btn.textContent = '🌙';
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        btn.textContent = '☀️';
-        localStorage.setItem('theme', 'light');
+  bindTheme(){
+    const button=document.getElementById('theme-toggle');
+    const saved=localStorage.getItem('overthinker-theme');
+    if(saved==='light')document.documentElement.dataset.theme='light';
+    const update=()=>button.textContent=document.documentElement.dataset.theme==='light'?'☀':'☾';
+    update();
+    button.addEventListener('click',()=>{
+      const light=document.documentElement.dataset.theme!=='light';
+      if(light)document.documentElement.dataset.theme='light';else delete document.documentElement.dataset.theme;
+      localStorage.setItem('overthinker-theme',light?'light':'dark');
+      update();
+    });
+  }
+
+  bindLanguage(){
+    const toggle=document.getElementById('lang-toggle');
+    const menu=document.getElementById('lang-menu');
+    toggle.addEventListener('click',()=>{
+      menu.hidden=!menu.hidden;
+      toggle.setAttribute('aria-expanded',String(!menu.hidden));
+    });
+    menu.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',async()=>{
+      if(window.i18n)await window.i18n.setLanguage(button.dataset.lang);
+      menu.hidden=true;
+      toggle.setAttribute('aria-expanded','false');
+      this.syncRoutes();
+      if(document.getElementById('question-screen').classList.contains('active'))this.renderQuestion();
+      if(document.getElementById('result-screen').classList.contains('active'))this.renderResult();
+    }));
+    document.addEventListener('click',event=>{
+      if(!event.target.closest('.language-selector')){
+        menu.hidden=true;
+        toggle.setAttribute('aria-expanded','false');
       }
     });
-    if (saved === 'light') btn.textContent = '☀️';
   }
 
-  initLangSelector() {
-    const toggle = document.getElementById('lang-toggle');
-    const menu = document.getElementById('lang-menu');
-    toggle.addEventListener('click', () => menu.classList.toggle('hidden'));
-    document.querySelectorAll('.lang-option').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (window.i18n) window.i18n.setLanguage(btn.dataset.lang);
-        menu.classList.add('hidden');
-      });
-    });
-    document.addEventListener('click', (e) => {
-      if (!e.target.closest('.language-selector')) menu.classList.add('hidden');
-    });
+  lang(){return window.i18n&&window.i18n.getCurrentLanguage?window.i18n.getCurrentLanguage():'en'}
+
+  syncRoutes(){
+    const lang=this.lang();
+    document.getElementById('next-action').href=`/stress-check/?lang=${lang}&source=overthinker_result`;
+    document.querySelector('[data-related-slug="emotion-iceberg"]').href=`/emotion-iceberg/?lang=${lang}&source=overthinker_related`;
+    document.querySelector('[data-related-slug="hsp-test"]').href=`/hsp-test/?lang=${lang}&source=overthinker_related`;
   }
 
-  initCarousel() {
-    const items = document.querySelectorAll('.carousel-item');
-    if (!items.length) return;
-    items[0].classList.add('active');
-    setInterval(() => {
-      items[this.carouselIdx].classList.remove('active');
-      this.carouselIdx = (this.carouselIdx + 1) % items.length;
-      items[this.carouselIdx].classList.add('active');
-    }, 3000);
+  show(id){
+    document.querySelectorAll('.screen').forEach(screen=>screen.classList.toggle('active',screen.id===id));
+    document.getElementById(id).focus?.({preventScroll:true});
+    scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
   }
 
-  showScreen(id) {
-    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  trackEvent(name, params = {}) {
-    try {
-      gtag('event', name, Object.assign({ event_category: 'overthinker_test', entry_surface: this.entrySurface }, params));
-    } catch(e) {}
-  }
-
-  tryAutoStart() {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get('start') !== '1' || this.autoStartConsumed) return;
-    this.autoStartConsumed = true;
-    this.trackEvent('overthinker_auto_start', { cta_surface: this.entrySurface });
-    const start = () => requestAnimationFrame(() => this.startQuiz('auto_start'));
-    if (window.i18n && window.i18n.ready && typeof window.i18n.ready.then === 'function') {
-      window.i18n.ready.then(start);
-    } else {
-      start();
-    }
-  }
-
-  startQuiz(trigger = 'intro_button') {
-    this.currentQuestion = 0;
-    this.scores = [0, 0, 0, 0, 0, 0];
-    this.answers = [];
-    this.resultViewTracked = false;
-    this.showScreen('question-screen');
+  start(){
+    this.index=0;
+    this.scores.fill(0);
+    this.answers=[];
+    this.locked=false;
+    track('start');
+    this.show('question-screen');
     this.renderQuestion();
-    const eventParams = { cta_surface: this.entrySurface, start_trigger: trigger };
-    this.trackEvent('quiz_start', eventParams);
-    this.trackEvent('test_start', eventParams);
   }
 
-  renderQuestion() {
-    const q = QUESTIONS[this.currentQuestion];
-    const pct = ((this.currentQuestion) / TOTAL_QUESTIONS * 100);
-    document.getElementById('progress-fill').style.width = pct + '%';
-    document.getElementById('progress-text').textContent = `${this.currentQuestion + 1} / ${TOTAL_QUESTIONS}`;
-    document.getElementById('question-icon').textContent = q.icon;
-    document.getElementById('question-text').textContent = t(q.questionKey);
-
-    const optionsEl = document.getElementById('options');
-    optionsEl.innerHTML = '';
-    const labels = ['A', 'B', 'C', 'D'];
-    q.options.forEach((optKey, idx) => {
-      const btn = document.createElement('button');
-      btn.className = 'option-btn';
-      btn.style.animationDelay = (idx * 0.06) + 's';
-      btn.innerHTML = `<span class="option-label">${labels[idx]}</span><span>${t(optKey)}</span>`;
-      btn.addEventListener('click', () => this.selectOption(idx));
-      optionsEl.appendChild(btn);
-    });
-
-    // Mid-quiz encouragement at Q4
-    const midMsg = document.getElementById('mid-quiz-msg');
-    if (this.currentQuestion === 4) {
-      midMsg.classList.remove('hidden');
-    } else {
-      midMsg.classList.add('hidden');
-    }
-  }
-
-  selectOption(idx) {
-    // Visual feedback
-    const btns = document.querySelectorAll('.option-btn');
-    btns.forEach(b => b.style.pointerEvents = 'none');
-    btns[idx].classList.add('selected');
-
-    // Score
-    const scoreKey = `${this.currentQuestion}${['a','b','c','d'][idx]}`;
-    const points = SCORE_MAP[scoreKey];
-    if (points) {
-      for (let i = 0; i < 6; i++) this.scores[i] += points[i];
-    }
-    this.answers.push({ question: this.currentQuestion, option: idx });
-
-    setTimeout(() => {
-      this.currentQuestion++;
-      if (this.currentQuestion >= TOTAL_QUESTIONS) {
-        this.showAnalyzing();
-      } else {
-        this.renderQuestion();
-      }
-    }, 400);
-  }
-
-  showAnalyzing() {
-    this.showScreen('analyzing-screen');
-    const fill = document.getElementById('analyzing-fill');
-    const status = document.getElementById('analyzing-status');
-    const steps = [
-      { pct: 20, key: 'analyzing.step1' },
-      { pct: 45, key: 'analyzing.step2' },
-      { pct: 70, key: 'analyzing.step3' },
-      { pct: 90, key: 'analyzing.step4' },
-      { pct: 100, key: 'analyzing.step5' }
-    ];
-    let i = 0;
-    const advance = () => {
-      if (i >= steps.length) { this.showResult(); return; }
-      fill.style.width = steps[i].pct + '%';
-      status.textContent = t(steps[i].key);
-      i++;
-      setTimeout(advance, 500);
-    };
-    advance();
-  }
-
-  calculateResult() {
-    let maxIdx = 0;
-    for (let i = 1; i < 6; i++) {
-      if (this.scores[i] > this.scores[maxIdx]) maxIdx = i;
-    }
-    const typeKeys = ['spiral', 'architect', 'rehearser', 'analyst', 'catastrophizer', 'replayer'];
-    return TYPES[typeKeys[maxIdx]];
-  }
-
-  showResult() {
-    const result = this.calculateResult();
-    this.showScreen('result-screen');
-
-    document.getElementById('result-badge').textContent = result.emoji;
-    document.getElementById('result-type').textContent = t(`type.${result.id}.name`);
-    document.getElementById('result-tagline').textContent = t(`type.${result.id}.tagline`);
-    document.getElementById('result-desc').textContent = t(`type.${result.id}.description`);
-
-    // Metrics
-    const metricsList = document.getElementById('metrics-list');
-    metricsList.innerHTML = '';
-    const metricLabels = {
-      nightThinking: 'result.metric.nightThinking',
-      loopIntensity: 'result.metric.loopIntensity',
-      sleepImpact: 'result.metric.sleepImpact',
-      creativity: 'result.metric.creativity',
-      anxiety: 'result.metric.anxiety'
-    };
-    Object.entries(result.metrics).forEach(([key, val]) => {
-      const row = document.createElement('div');
-      row.className = 'metric-row';
-      row.innerHTML = `
-        <span class="metric-label">${t(metricLabels[key])}</span>
-        <div class="metric-bar"><div class="metric-fill" style="width:0"></div></div>
-        <span class="metric-value">${val}%</span>`;
-      metricsList.appendChild(row);
-    });
-    // Animate metrics
-    setTimeout(() => {
-      metricsList.querySelectorAll('.metric-fill').forEach((bar, i) => {
-        const val = Object.values(result.metrics)[i];
-        bar.style.width = val + '%';
-      });
-    }, 100);
-
-    // Percentile
-    const pct = Math.floor(Math.random() * 15) + 5;
-    document.getElementById('percentile-text').textContent =
-      t('result.percentile').replace('{pct}', pct);
-
-    // Traits
-    const traitsWrap = document.getElementById('traits-wrap');
-    traitsWrap.innerHTML = '';
-    for (let i = 1; i <= 3; i++) {
-      const tag = document.createElement('span');
-      tag.className = 'trait-tag';
-      tag.textContent = t(`type.${result.id}.trait${i}`);
-      traitsWrap.appendChild(tag);
-    }
-
-    // Confetti
-    this.spawnConfetti();
-    this.ensureResultAdLoaded();
-
-    if (!this.resultViewTracked) {
-      const resultParams = { event_label: result.id, result_type: result.id, cta_surface: this.entrySurface, value: 1 };
-      this.trackEvent('quiz_complete', resultParams);
-      this.trackEvent('test_complete', resultParams);
-      this.trackEvent('result_view', resultParams);
-      this.trackEvent('overthinker_result_view', resultParams);
-      this.resultViewTracked = true;
-    }
-
-    this.currentResult = result;
-  }
-
-  ensureResultAdLoaded() {
-    if (this.resultAdLoaded) return;
-    const slot = document.getElementById('overthinker-result-ad');
-    const adNode = slot ? slot.querySelector('ins.adsbygoogle') : null;
-    if (!slot || !adNode) return;
-    slot.dataset.loaded = 'true';
-    this.resultAdLoaded = true;
-    if (window.location.protocol !== 'file:') {
-      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); }
-      catch (e) { slot.dataset.loaded = 'error'; }
-    }
-    this.trackEvent('overthinker_result_ad_impression', {
-      cta_surface: this.entrySurface,
-      ad_surface: slot.getAttribute('data-ad-surface') || 'overthinker_result',
-      ad_slot: adNode.getAttribute('data-ad-slot') || 'auto'
+  renderQuestion(){
+    const question=QUESTIONS[this.index];
+    document.getElementById('progress-text').textContent=`${this.index+1} / ${TOTAL}`;
+    document.getElementById('progress-fill').style.width=`${((this.index+1)/TOTAL)*100}%`;
+    document.getElementById('question-icon').textContent=ICONS[this.index%ICONS.length];
+    document.getElementById('question-text').textContent=t(question.questionKey);
+    const options=document.getElementById('options');
+    options.replaceChildren();
+    question.options.forEach((key,optionIndex)=>{
+      const button=document.createElement('button');
+      button.type='button';
+      button.className='option';
+      button.textContent=t(key);
+      button.addEventListener('click',()=>this.answer(optionIndex));
+      options.append(button);
     });
   }
 
-  spawnConfetti() {
-    const colors = ['#7c3aed', '#a78bfa', '#c084fc', '#f59e0b', '#10b981', '#ef4444'];
-    for (let i = 0; i < 40; i++) {
-      const el = document.createElement('div');
-      el.className = 'confetti';
-      el.style.left = Math.random() * 100 + 'vw';
-      el.style.background = colors[Math.floor(Math.random() * colors.length)];
-      el.style.animationDelay = Math.random() * 1.5 + 's';
-      el.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
-      el.style.width = (Math.random() * 6 + 4) + 'px';
-      el.style.height = (Math.random() * 6 + 4) + 'px';
-      document.body.appendChild(el);
-      setTimeout(() => el.remove(), 4000);
-    }
+  answer(optionIndex){
+    if(this.locked)return;
+    this.locked=true;
+    document.querySelectorAll('.option').forEach(button=>button.disabled=true);
+    const typeIndex=ANSWER_TYPE[this.index][optionIndex];
+    this.scores[typeIndex]+=1;
+    this.answers.push(typeIndex);
+    if(this.answers.length===4)track('progress');
+    this.index+=1;
+    setTimeout(()=>{
+      this.locked=false;
+      if(this.index<TOTAL)this.renderQuestion();else this.finish();
+    },120);
   }
 
-  retryQuiz() {
-    this.startQuiz('retry');
+  winner(){
+    let best=0;
+    for(let i=1;i<this.scores.length;i++)if(this.scores[i]>this.scores[best])best=i;
+    return best;
   }
 
-  getShareText() {
-    if (!this.currentResult) return '';
-    const name = t(`type.${this.currentResult.id}.name`);
-    return t('share.text').replace('{type}', name).replace('{emoji}', this.currentResult.emoji);
+  finish(){
+    this.show('result-screen');
+    this.renderResult();
+    track('complete');
   }
 
-  shareKakao() {
-    const text = this.getShareText();
-    const url = window.location.href;
-    window.open(`https://story.kakao.com/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
+  renderResult(){
+    const index=this.winner();
+    const id=TYPES[index];
+    const points=this.scores[index];
+    document.getElementById('result-badge').textContent=ICONS[index];
+    document.getElementById('result-type').textContent=t(`type.${id}.name`);
+    document.getElementById('result-tagline').textContent=t(`type.${id}.tagline`);
+    document.getElementById('result-calculation').textContent=format(t('result.calculation'),{points:String(points),total:String(TOTAL)});
+    document.getElementById('share-status').textContent='';
+    this.syncRoutes();
   }
 
-  shareTwitter() {
-    const text = this.getShareText();
-    const url = window.location.href;
-    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
+  async share(){
+    const data={title:document.title,text:t('share.text'),url:'https://dopabrain.com/overthinker-test/'};
+    let success=false;
+    try{
+      if(navigator.share){await navigator.share(data);success=true}
+      else if(navigator.clipboard){await navigator.clipboard.writeText(data.url);success=true}
+    }catch(error){if(error&&error.name==='AbortError')return}
+    const status=document.getElementById('share-status');
+    status.textContent=success?t('share.success'):t('share.failure');
+    if(success)track('share');
   }
 
-  shareFacebook() {
-    const url = window.location.href;
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
-  }
-
-  shareCopy() {
-    const url = window.location.href;
-    navigator.clipboard.writeText(url).then(() => {
-      const btn = document.getElementById('share-copy');
-      const origHTML = btn.innerHTML;
-      btn.innerHTML = '<span class="share-icon">✓</span><span class="share-label">' + t('share.copied') + '</span>';
-      setTimeout(() => { btn.innerHTML = origHTML; }, 2000);
-    }).catch(() => { prompt('Copy:', window.location.href); });
+  retry(){
+    this.index=0;
+    this.scores.fill(0);
+    this.answers=[];
+    this.locked=false;
+    this.show('intro-screen');
   }
 }
 
-// Initialize when DOM ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => new OverthinkerQuiz());
-} else {
-  new OverthinkerQuiz();
-}
-
+new Reflection();
 })();

@@ -1,154 +1,107 @@
 {
   "app": {
-    "skipLink": "Langsung ke konten utama",
-    "loading": "Memuat...",
-    "backHome": "DopaBrain Beranda"
+    "skipLink": "Lewati ke konten utama",
+    "backHome": "Kembali ke DopaBrain"
   },
   "intro": {
-    "title": "Kamu Tipe Overthinker yang Mana?",
-    "hook": "Apakah kamu memutar ulang percakapan jam 3 pagi? Melatih pesan sebelum mengirim?",
-    "subtitle": "Semua orang overthinking. Tapi CARA kamu overthinking bilang banyak tentang dirimu.",
-    "socialProof": "Bergabung dengan <strong>14.200+</strong> sesama overthinker",
-    "startBtn": "Temukan Gaya Overthinking-ku",
-    "timeEstimate": "~2 menit • 8 pertanyaan",
-    "carousel1": "Pemikir Spiral Jam 3 Pagi",
-    "carousel2": "Arsitek Skenario",
-    "carousel3": "Pelatih Balasan",
-    "carousel4": "Analis Ekspresi Mikro",
-    "feature1": "8 Pertanyaan Cepat",
-    "feature2": "6 Tipe Unik",
-    "feature3": "Nyesek Banget Relatablenya"
+    "eyebrow": "Refleksi 8 pertanyaan",
+    "title": "Siklus pikiran mana yang paling sering muncul?",
+    "hook": "Pilih jawaban yang paling mendekati kebiasaan Anda. Tidak ada jawaban benar.",
+    "boundaryTitle": "Apa yang dapat ditunjukkan",
+    "boundary": "Ini gambaran ringan dari jawaban Anda, bukan penilaian kesehatan mental atau label kepribadian tetap.",
+    "startBtn": "Mulai refleksi",
+    "timeEstimate": "Sekitar 1 menit · 8 pertanyaan",
+    "methodTitle": "Cara hasil dihitung",
+    "method": "Setiap jawaban menambah satu poin pada siklus yang dijelaskan. Siklus terbanyak ditampilkan; jika seri, yang lebih dulu dalam urutan pertanyaan dipakai."
   },
   "question": {
     "0": "Jam 2 pagi dan kamu nggak bisa tidur. Otakmu lagi ngapain?",
+    "1": "Kamu mau ketemu orang baru. Apa yang terjadi di kepalamu?",
+    "2": "Kamu baru kirim pesan penting. Terus?",
+    "3": "Sesuatu yang bikin stres terjadi di kantor. Reaksimu?",
+    "4": "Temanmu akhir-akhir ini agak menjauh. Proses berpikirmu?",
+    "5": "Kamu harus ambil keputusan penting. Gimana cara menghadapinya?",
+    "6": "Gimana cara kamu mikirin masa depan?",
+    "7": "Kamu lagi overthinking sekarang. Kelihatannya kayak gimana?",
     "0a": "Memutar ulang hal memalukan yang kamu bilang 3 tahun lalu",
     "0b": "Membayangkan timeline alternatif kalau kamu pilih yang berbeda",
     "0c": "Latihan percakapan besok kata per kata",
     "0d": "Daftar semua hal yang bisa salah besok",
-    "1": "Kamu mau ketemu orang baru. Apa yang terjadi di kepalamu?",
     "1a": "Latihan perkenalan 47 kali",
     "1b": "Menganalisis setiap ekspresi wajah mereka selama percakapan",
     "1c": "Membayangkan 12 kemungkinan hasil pertemuan",
     "1d": "Memutar ulang percakapan selama 3 hari berturut-turut",
-    "2": "Kamu baru kirim pesan penting. Terus?",
     "2a": "Baca ulang 8 kali, mikirin apa tanda titiknya kedengeran marah",
     "2b": "Bayangkan semua cara mereka bisa menginterpretasi kata-katamu",
     "2c": "Panik karena mereka udah baca tapi belum balas",
     "2d": "Tulis 5 pesan follow-up, kirim nol",
-    "3": "Sesuatu yang bikin stres terjadi di kantor. Reaksimu?",
     "3a": "Nggak bisa tidur — pikiran muter-muter semalaman",
     "3b": "Langsung loncat ke: dipecat → kehilangan rumah → tinggal di mobil",
     "3c": "Bikin rencana darurat 47 langkah untuk setiap kemungkinan",
     "3d": "Terobsesi dengan apa yang bisa dilakukan beda",
-    "4": "Temanmu akhir-akhir ini agak menjauh. Proses berpikirmu?",
     "4a": "Analisis 20 pesan terakhir cari makna tersembunyi",
     "4b": "Latihan 'Kamu marah sama aku?' dalam 15 nada berbeda",
     "4c": "Bayangkan 8 alasan mereka mungkin diam-diam benci kamu",
     "4d": "Terjaga memutar ulang setiap interaksi cari petunjuk",
-    "5": "Kamu harus ambil keputusan penting. Gimana cara menghadapinya?",
     "5a": "Riset obsesif sampai 47 tab browser terbuka",
     "5b": "Fokus sepenuhnya pada apa yang bisa salah di setiap pilihan",
     "5c": "Tanya semua orang yang kamu kenal, lalu overanalisis semua saran mereka",
     "5d": "Memutuskan, lalu langsung ragu-ragu berminggu-minggu",
-    "6": "Gimana cara kamu mikirin masa depan?",
     "6a": "Katastrofisasi bencana yang nggak mungkin terjadi dengan detail vivid",
     "6b": "Bikin simulasi mental detail untuk setiap jalur yang mungkin",
     "6c": "Kehilangan tidur karena hal-hal yang masih bertahun-tahun lagi",
     "6d": "Latihan percakapan masa depan hipotetis yang mungkin nggak pernah terjadi",
-    "7": "Kamu lagi overthinking sekarang. Kelihatannya kayak gimana?",
     "7a": "Overthinking tentang seberapa banyak kamu overthinking (inception!)",
     "7b": "Menganalisis persis KENAPA kamu overthinking segalanya",
     "7c": "Membangun teori tentang pola pikirmu sendiri",
     "7d": "Khawatir overthinking akhirnya bakal menghancurkan hidupmu"
   },
   "quiz": {
-    "midQuiz": "Setengah jalan! Profil overthinking-mu mulai terbentuk..."
-  },
-  "analyzing": {
-    "title": "Menganalisis pola pikirmu...",
-    "step1": "Memindai loop pikiran...",
-    "step2": "Mengukur intensitas spiral...",
-    "step3": "Mendeteksi pola larut malam...",
-    "step4": "Menghitung panjang gelombang overthinking...",
-    "step5": "Profil selesai!"
+    "choose": "Pilih satu jawaban"
   },
   "type": {
     "spiral": {
       "name": "Pemikir Spiral Jam 3 Pagi",
-      "tagline": "Otakmu nggak punya tombol off, apalagi jam 2 pagi.",
-      "description": "Kamu adalah overthinker klasik yang otaknya langsung ngebut begitu kepala menyentuh bantal. Satu pikiran mengarah ke pikiran lain, lalu ke pikiran lain lagi, sampai kamu merenungkan makna hidup jam 3 pagi. Pikiranmu nggak jalan lurus — mereka jalan spiral, setiap putaran menarikmu lebih dalam. Kabar baiknya? Otakmu nggak pernah berhenti, artinya kamu sangat teliti dan sadar diri.",
-      "trait1": "Pemikir Malam",
-      "trait2": "Refleksi Diri Mendalam",
-      "trait3": "Master Logika Sirkular"
+      "tagline": "Otakmu nggak punya tombol off, apalagi jam 2 pagi."
     },
     "architect": {
       "name": "Arsitek Skenario",
-      "tagline": "Kamu udah merencanakan 47 timeline alternatif.",
-      "description": "Otakmu adalah mesin simulasi. Sebelum sesuatu terjadi, kamu udah membayangkan setiap hasil yang mungkin, bikin rencana cadangan, dan memetakan pohon keputusan. Kamu nggak cuma mikir apa yang mungkin terjadi — kamu membangun seluruh dunia mental di sekitar kemungkinan. Sementara orang lain hidup di satu realitas, kamu secara bersamaan menjalankan skenario di selusin alam semesta paralel. Ini membuatmu strategis dan pemecah masalah yang luar biasa.",
-      "trait1": "Perencana Strategis",
-      "trait2": "Penjelajah Kemungkinan",
-      "trait3": "Simulator Mental"
+      "tagline": "Kamu udah merencanakan 47 timeline alternatif."
     },
     "rehearser": {
       "name": "Pelatih Balasan",
-      "tagline": "Kamu udah latihan percakapan ini 12 kali.",
-      "description": "Setiap percakapan adalah pertunjukan yang udah kamu latih puluhan kali. Kamu nulis pesan di app catatan sebelum mengirim. Kamu latihan jawaban untuk pertanyaan yang belum ada yang tanya. Kamu tahu persis apa yang akan kamu bilang kalau seseorang mengangkat topik itu — karena kamu udah siapkan pidato 3 menit di kamar mandi. Percakapanmu nggak pernah spontan, tapi selalu dipoles sempurna.",
-      "trait1": "Perfeksionis Komunikasi",
-      "trait2": "Master Persiapan",
-      "trait3": "Pengrajin Kata"
+      "tagline": "Kamu udah latihan percakapan ini 12 kali."
     },
     "analyst": {
       "name": "Analis Ekspresi Mikro",
-      "tagline": "Mereka kedip dua kali? Itu pasti ada artinya.",
-      "description": "Kamu menyadari segalanya. Jeda ringan sebelum seseorang menjawab, perubahan nada yang nyaris tak terdeteksi, cara mereka melirik HP saat kamu bercerita. Otakmu adalah mesin pengenal pola yang di-tune untuk menangkap sinyal sosial yang kebanyakan orang lewatkan. Kamu membaca di antara setiap baris dan di balik setiap senyum. Memang bisa melelahkan, tapi ini juga membuatmu sangat empatik dan cerdas secara emosional.",
-      "trait1": "Ahli Perilaku Manusia",
-      "trait2": "Hiper-Pengamat",
-      "trait3": "Kecerdasan Emosional"
+      "tagline": "Mereka kedip dua kali? Itu pasti ada artinya."
     },
     "catastrophizer": {
       "name": "Katastrofis Masa Depan",
-      "tagline": "Hobi? Membayangkan skenario terburuk dalam 4K.",
-      "description": "Masalah kecil nggak ada di duniamu — setiap isu langsung naik ke kesimpulan paling dramatis. Sakit kepala? Mungkin tumor otak. Bos mau ngomong? Kamu dipecat. Teman nggak balas chat? Benci kamu selamanya. Otakmu adalah sutradara film bencana, selalu siap memproduksi bencana blockbuster berikutnya. Tapi begini — kamu juga orang paling siap di ruangan mana pun karena kamu sudah selamat dari setiap skenario terburuk di kepalamu.",
-      "trait1": "Ahli Kasus Terburuk",
-      "trait2": "Kesiapan Krisis",
-      "trait3": "Imajinasi Vivid"
+      "tagline": "Hobi? Membayangkan skenario terburuk dalam 4K."
     },
     "replayer": {
       "name": "Pemutar Ulang Memori Selektif",
-      "tagline": "Masih cringe sama sesuatu dari 2009.",
-      "description": "Otakmu adalah mesin waktu yang eksklusif bepergian ke momen paling memalukan. Hal aneh yang kamu bilang di pesta 2015? Jernih banget. Saat kamu balas lambaian ke orang yang nggak melambaikan tangan? Diputar ulang tiap malam. Kamu punya memori fotografis, tapi cuma untuk momen yang ingin kamu lupakan. Nggak ingat taruh kunci di mana, tapi bisa mengingat setiap detail cringe dari percakapan 7 tahun lalu.",
-      "trait1": "Arkeolog Cringe",
-      "trait2": "Perfeksionis Detail",
-      "trait3": "Sejarawan Sadar Diri"
+      "tagline": "Masih cringe sama sesuatu dari 2009."
     }
   },
   "result": {
-    "metricsTitle": "Profil Overthinking-mu",
-    "metric": {
-      "nightThinking": "Pemikiran Malam",
-      "loopIntensity": "Intensitas Loop",
-      "sleepImpact": "Dampak Tidur",
-      "creativity": "Boost Kreativitas",
-      "anxiety": "Level Kecemasan"
-    },
-    "percentile": "{pct}% overthinker punya tipe yang sama denganmu",
-    "shareTitle": "Bagikan tipe overthinking-mu!",
-    "copyLink": "Salin",
-    "moreTests": "Tes Lainnya",
-    "retry": "Coba Lagi"
+    "eyebrow": "Siklus yang paling sering Anda pilih",
+    "calculationTitle": "Arti hasil ini",
+    "calculation": "Anda memilih jawaban terkait siklus ini {points} dari {total} kali.",
+    "boundary": "Ini hanya merangkum delapan pilihan ini. Bukan pengukuran kecemasan, kemampuan, atau kepribadian.",
+    "nextAction": "Periksa beban stres saat ini",
+    "share": "Bagikan refleksi ini",
+    "retry": "Coba lagi",
+    "relatedTitle": "Lanjutkan dengan satu pemeriksaan terfokus"
   },
   "related": {
     "emotionIceberg": "Gunung Es Emosi",
-    "stressCheck": "Cek Stres",
-    "hspTest": "Tes HSP",
-    "aiPersonality": "Kepribadian AI",
-    "stressResponse": "Respons Stres",
-    "anxietyType": "Tipe Kecemasan",
-    "eqTest": "Tes EQ",
-    "dopamineType": "Tipe Dopamin"
+    "hspTest": "Refleksi Sensitivitas"
   },
   "share": {
-    "text": "Aku {emoji} {type}! Kamu tipe overthinker yang mana? Cek di sini:",
-    "copied": "Tersalin!"
+    "text": "Refleksi singkat 8 pertanyaan tentang siklus pikiran:",
+    "success": "Dibagikan atau disalin.",
+    "failure": "Berbagi tidak tersedia di browser ini."
   }
 }

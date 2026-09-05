@@ -1,154 +1,107 @@
 {
   "app": {
-    "skipLink": "Zum Hauptinhalt springen",
-    "loading": "Wird geladen...",
-    "backHome": "DopaBrain Startseite"
+    "skipLink": "Zum Inhalt springen",
+    "backHome": "Zurück zu DopaBrain"
   },
   "intro": {
-    "title": "Welcher Typ Überdenker bist du?",
-    "hook": "Spielst du Gesprache um 3 Uhr nachts nach? Probst du Nachrichten vor dem Senden?",
-    "subtitle": "Jeder denkt zu viel nach. Aber WIE du es tust, sagt viel über dich aus.",
-    "socialProof": "Schließ dich <strong>14.200+</strong> Überdenkern an",
-    "startBtn": "Meinen Überdenker-Stil entdecken",
-    "timeEstimate": "~2 Min. • 8 Fragen",
-    "carousel1": "3-Uhr-Nachts-Spiraldenker",
-    "carousel2": "Szenario-Architekt",
-    "carousel3": "Antwort-Probenmeister",
-    "carousel4": "Mikro-Ausdruck-Analyst",
-    "feature1": "8 schnelle Fragen",
-    "feature2": "6 einzigartige Typen",
-    "feature3": "Schmerzhaft zutreffend"
+    "eyebrow": "Reflexion mit 8 Fragen",
+    "title": "Welche Gedankenschleife taucht am häufigsten auf?",
+    "hook": "Wähle die Antwort, die deinem üblichen Verhalten am nächsten kommt. Es gibt kein Richtig oder Falsch.",
+    "boundaryTitle": "Was das Ergebnis aussagt",
+    "boundary": "Eine spielerische Momentaufnahme deiner Antworten – keine psychische Beurteilung und kein festes Persönlichkeitslabel.",
+    "startBtn": "Reflexion starten",
+    "timeEstimate": "Etwa 1 Minute · 8 Fragen",
+    "methodTitle": "So wird das Ergebnis berechnet",
+    "method": "Jede Antwort gibt der beschriebenen Gedankenschleife einen Punkt. Die häufigste wird angezeigt; bei Gleichstand gilt die zuerst vorkommende."
   },
   "question": {
     "0": "Es ist 2 Uhr nachts und du kannst nicht schlafen. Was macht dein Gehirn?",
+    "1": "Du triffst gleich jemand Neues. Was passiert in deinem Kopf?",
+    "2": "Du hast gerade eine wichtige Nachricht geschickt. Und jetzt?",
+    "3": "Etwas Stressiges passiert bei der Arbeit. Deine Reaktion?",
+    "4": "Dein Freund/deine Freundin wirkt in letzter Zeit distanziert. Dein Denkprozess?",
+    "5": "Du musst eine wichtige Entscheidung treffen. Wie gehst du damit um?",
+    "6": "Wie denkst du über die Zukunft?",
+    "7": "Du überdenkst gerade. Wie sieht DAS aus?",
     "0a": "Spielt die peinliche Sache ab, die du vor 3 Jahren gesagt hast",
     "0b": "Stellt sich alternative Zeitlinien vor, in denen du andere Entscheidungen getroffen hast",
     "0c": "Probt das Gespräch von morgen Wort für Wort",
     "0d": "Listet alles auf, was morgen schiefgehen könnte",
-    "1": "Du triffst gleich jemand Neues. Was passiert in deinem Kopf?",
     "1a": "Du probst deine Vorstellung 47 Mal",
     "1b": "Du analysierst jeden Gesichtsausdruck während des Gesprächs",
     "1c": "Du stellst dir alle 12 möglichen Ausgänge des Treffens vor",
     "1d": "Du spielst das Gespräch 3 Tage lang im Kopf durch",
-    "2": "Du hast gerade eine wichtige Nachricht geschickt. Und jetzt?",
     "2a": "Liest sie 8 Mal und fragst dich, ob der Punkt wütend klingt",
     "2b": "Stellst dir jeden möglichen Weg vor, wie sie deine Worte interpretieren könnten",
     "2c": "Gerätst in Panik, weil sie es gelesen aber nicht geantwortet haben",
     "2d": "Schreibst 5 Follow-up-Nachrichten, schickst keine davon ab",
-    "3": "Etwas Stressiges passiert bei der Arbeit. Deine Reaktion?",
     "3a": "Kannst nicht schlafen — dein Kopf dreht sich die ganze Nacht im Kreis",
     "3b": "Springst sofort zu: Ich werde gefeuert, verliere mein Haus, lebe im Van",
     "3c": "Baust einen 47-Schritte-Notfallplan für jedes mögliche Ergebnis",
     "3d": "Grübelst darüber nach, was du anders hättest machen können",
-    "4": "Dein Freund/deine Freundin wirkt in letzter Zeit distanziert. Dein Denkprozess?",
     "4a": "Analysierst die letzten 20 Nachrichten auf versteckte Bedeutung",
     "4b": "Übst ‚Bist du sauer auf mich?' in 15 verschiedenen Tonlagen",
     "4c": "Stellst dir 8 Gründe vor, warum sie dich heimlich hassen könnten",
     "4d": "Liegst wach und gehst jede Interaktion auf der Suche nach Hinweisen durch",
-    "5": "Du musst eine wichtige Entscheidung treffen. Wie gehst du damit um?",
     "5a": "Recherchierst besessen, bis du 47 Browser-Tabs offen hast",
     "5b": "Fokussierst dich nur darauf, was bei jeder Option schiefgehen könnte",
     "5c": "Fragst jeden, den du kennst, und überanalysierst dann alle Ratschläge",
     "5d": "Entscheidest dich, und zweifelst dann wochenlang sofort an dir",
-    "6": "Wie denkst du über die Zukunft?",
     "6a": "Katastrophisierst über unwahrscheinliche Katastrophen in lebhaften Details",
     "6b": "Erstellst detaillierte mentale Simulationen für jeden möglichen Weg",
     "6c": "Verlierst den Schlaf über Dinge, die buchstäblich Jahre entfernt sind",
     "6d": "Probst hypothetische zukünftige Gespräche, die vielleicht nie stattfinden",
-    "7": "Du überdenkst gerade. Wie sieht DAS aus?",
     "7a": "Überdenken darüber, wie viel du überdenkst (Inception!)",
     "7b": "Genau analysieren, WARUM du alles überdenkst",
     "7c": "Theorien über die eigenen Denkmuster aufstellen",
     "7d": "Sich Sorgen machen, dass Überdenken irgendwann dein Leben ruiniert"
   },
   "quiz": {
-    "midQuiz": "Halbzeit! Dein Überdenker-Profil nimmt Gestalt an..."
-  },
-  "analyzing": {
-    "title": "Deine Denkmuster werden analysiert...",
-    "step1": "Gedankenschleifen werden gescannt...",
-    "step2": "Spiral-Intensität wird gemessen...",
-    "step3": "Nachtmuster werden erkannt...",
-    "step4": "Überdenker-Wellenlänge wird berechnet...",
-    "step5": "Profil fertig!"
+    "choose": "Eine Antwort wählen"
   },
   "type": {
     "spiral": {
       "name": "3-Uhr-Nachts-Spiraldenker",
-      "tagline": "Dein Gehirn hat keinen Aus-Knopf, besonders um 2 Uhr nachts.",
-      "description": "Du bist der klassische Überdenker, dessen Kopf auf Hochtouren schaltet, sobald er das Kissen berührt. Ein Gedanke führt zum nächsten, der zum nächsten, bis du um 3 Uhr nachts über den Sinn des Lebens grübelst. Deine Gedanken laufen nicht geradeaus — sie drehen sich in Spiralen, wobei jede Windung dich tiefer zieht. Die gute Nachricht? Dein Gehirn hört nie auf zu arbeiten, was bedeutet, dass du unglaublich gründlich und selbstbewusst bist.",
-      "trait1": "Nachtdenker",
-      "trait2": "Tiefe Selbstreflexion",
-      "trait3": "Meister der Kreislogik"
+      "tagline": "Dein Gehirn hat keinen Aus-Knopf, besonders um 2 Uhr nachts."
     },
     "architect": {
       "name": "Szenario-Architekt",
-      "tagline": "Du hast bereits 47 alternative Zeitlinien geplant.",
-      "description": "Dein Gehirn ist eine Simulationsmaschine. Bevor irgendetwas passiert, hast du bereits jedes mögliche Ergebnis durchgespielt, Notfallpläne erstellt und Entscheidungsbäume gezeichnet. Du denkst nicht nur darüber nach, was passieren könnte — du baust ganze mentale Welten um Möglichkeiten herum. Während andere in einer Realität leben, lässt du gleichzeitig Szenarien in einem Dutzend Paralleluniversen laufen. Das macht dich zu einem unglaublichen Strategen und Problemlöser.",
-      "trait1": "Strategischer Planer",
-      "trait2": "Möglichkeiten-Entdecker",
-      "trait3": "Mentaler Simulator"
+      "tagline": "Du hast bereits 47 alternative Zeitlinien geplant."
     },
     "rehearser": {
       "name": "Antwort-Probenmeister",
-      "tagline": "Dieses Gespräch hast du schon 12 Mal geprobt.",
-      "description": "Jedes Gespräch ist eine Aufführung, die du dutzende Male geprobt hast. Du tippst Nachrichten in deiner Notizen-App vor dem Absenden. Du übst Antworten auf Fragen, die noch niemand gestellt hat. Du weißt genau, was du sagen würdest, wenn jemand dieses Thema anspricht — weil du unter der Dusche eine 3-minütige Rede vorbereitet hast. Deine Gespräche sind nie spontan, aber immer perfekt ausgefeilt.",
-      "trait1": "Kommunikations-Perfektionist",
-      "trait2": "Vorbereitungs-Meister",
-      "trait3": "Wort-Handwerker"
+      "tagline": "Dieses Gespräch hast du schon 12 Mal geprobt."
     },
     "analyst": {
       "name": "Mikro-Ausdruck-Analyst",
-      "tagline": "Zweimal geblinzelt? Das bedeutet etwas.",
-      "description": "Du bemerkst alles. Die leichte Pause, bevor jemand antwortet, die kaum wahrnehmbare Veränderung im Tonfall, wie sie während deiner Geschichte aufs Handy geschaut haben. Dein Gehirn ist eine Mustererkennungsmaschine, die darauf eingestellt ist, soziale Signale aufzufangen, die die meisten übersehen. Du liest zwischen jeder Zeile und hinter jedem Lächeln. Das kann erschöpfend sein, macht dich aber auch unglaublich empathisch und emotional intelligent.",
-      "trait1": "Experte für menschliches Verhalten",
-      "trait2": "Hyper-Beobachter",
-      "trait3": "Emotionale Intelligenz"
+      "tagline": "Zweimal geblinzelt? Das bedeutet etwas."
     },
     "catastrophizer": {
       "name": "Zukunfts-Katastrophisierer",
-      "tagline": "Mein Hobby? Worst-Case-Szenarien in 4K vorstellen.",
-      "description": "Kleine Probleme gibt es in deiner Welt nicht — jedes Thema eskaliert sofort zum dramatischsten Ausgang. Kopfschmerzen? Wahrscheinlich ein Hirntumor. Der Chef will reden? Du wirst gefeuert. Freund hat nicht geantwortet? Hasst dich für immer. Dein Gehirn ist ein Katastrophenfilm-Regisseur, der immer bereit ist, den nächsten Blockbuster zu produzieren. Aber hier ist der Clou — du bist auch die am besten vorbereitete Person in jedem Raum, weil du jedes Worst-Case-Szenario in deinem Kopf bereits überlebt hast.",
-      "trait1": "Worst-Case-Experte",
-      "trait2": "Krisenvorsorge",
-      "trait3": "Lebhafte Fantasie"
+      "tagline": "Mein Hobby? Worst-Case-Szenarien in 4K vorstellen."
     },
     "replayer": {
       "name": "Selektiver Erinnerungs-Abspieler",
-      "tagline": "Schämt sich immer noch für etwas aus 2009.",
-      "description": "Dein Gehirn ist eine Zeitmaschine, die ausschließlich zu deinen peinlichsten Momenten reist. Das Peinliche, was du auf einer Party 2015 gesagt hast? Kristallklar. Das Mal, als du jemandem zurückgewinkt hast, der gar nicht dir gewinkt hat? Wird jede Nacht abgespielt. Du hast ein fotografisches Gedächtnis, aber nur für Momente, die du lieber vergessen würdest. Du erinnerst dich nicht, wo du deine Schlüssel hingelegt hast, aber an jedes peinliche Detail des Gesprächs von vor 7 Jahren.",
-      "trait1": "Cringe-Archäologe",
-      "trait2": "Detail-Perfektionist",
-      "trait3": "Selbstbewusster Historiker"
+      "tagline": "Schämt sich immer noch für etwas aus 2009."
     }
   },
   "result": {
-    "metricsTitle": "Dein Überdenker-Profil",
-    "metric": {
-      "nightThinking": "Nachtdenken",
-      "loopIntensity": "Schleifen-Intensität",
-      "sleepImpact": "Schlaf-Auswirkung",
-      "creativity": "Kreativitäts-Boost",
-      "anxiety": "Angst-Level"
-    },
-    "percentile": "{pct}% der Überdenker teilen deinen Typ",
-    "shareTitle": "Teile deinen Überdenker-Typ!",
-    "copyLink": "Kopieren",
-    "moreTests": "Mehr Tests",
-    "retry": "Nochmal"
+    "eyebrow": "Deine häufigste Schleife",
+    "calculationTitle": "Was das Ergebnis bedeutet",
+    "calculation": "Bei {points} von {total} Antworten hast du diese Schleife gewählt.",
+    "boundary": "Es fasst nur diese acht Entscheidungen zusammen. Es misst weder Angst noch Fähigkeiten oder Persönlichkeit.",
+    "nextAction": "Aktuelle Stressbelastung prüfen",
+    "share": "Reflexion teilen",
+    "retry": "Noch einmal",
+    "relatedTitle": "Mit einem fokussierten Check fortfahren"
   },
   "related": {
     "emotionIceberg": "Emotions-Eisberg",
-    "stressCheck": "Stress-Check",
-    "hspTest": "HSP-Test",
-    "aiPersonality": "AI-Persönlichkeit",
-    "stressResponse": "Stressreaktion",
-    "anxietyType": "Angsttyp",
-    "eqTest": "EQ-Test",
-    "dopamineType": "Dopamin-Typ"
+    "hspTest": "Sensibilitäts-Reflexion"
   },
   "share": {
-    "text": "Ich bin ein {emoji} {type}! Welcher Überdenker-Typ bist du? Finde es heraus:",
-    "copied": "Kopiert!"
+    "text": "Eine kurze Reflexion über Gedankenschleifen mit 8 Fragen:",
+    "success": "Geteilt oder kopiert.",
+    "failure": "Teilen ist in diesem Browser nicht verfügbar."
   }
 }

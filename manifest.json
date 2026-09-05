@@ -1,11 +1,12 @@
 {
-  "name": "Overthinker Test - What Type of Overthinker Are You?",
-  "short_name": "Overthinker Test",
-  "description": "Discover your unique overthinking style with this fun 8-question quiz.",
+  "name": "Overthinking Loop Check",
+  "short_name": "Thought Loops",
+  "description": "An 8-question reflection that counts which everyday thought loop appears most often.",
   "start_url": "/overthinker-test/",
+  "scope": "/overthinker-test/",
   "display": "standalone",
-  "background_color": "#0a0a1a",
-  "theme_color": "#7c3aed",
+  "background_color": "#100d1e",
+  "theme_color": "#17122b",
   "icons": [
     { "src": "icon-192.svg", "sizes": "192x192", "type": "image/svg+xml" },
     { "src": "icon-512.svg", "sizes": "512x512", "type": "image/svg+xml" }

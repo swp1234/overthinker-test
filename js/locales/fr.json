@@ -1,154 +1,107 @@
 {
   "app": {
-    "skipLink": "Passer au contenu principal",
-    "loading": "Chargement...",
-    "backHome": "DopaBrain Accueil"
+    "skipLink": "Aller au contenu",
+    "backHome": "Retour à DopaBrain"
   },
   "intro": {
-    "title": "Quel type de sur-penseur es-tu ?",
-    "hook": "Vous rejouez des conversations a 3h du matin ? Repetez vos messages avant de les envoyer ?",
-    "subtitle": "Tout le monde pense trop. Mais COMMENT tu penses trop en dit long sur toi.",
-    "socialProof": "Rejoins <strong>14 200+</strong> sur-penseurs",
-    "startBtn": "Découvrir mon style de sur-pensée",
-    "timeEstimate": "~2 min • 8 questions",
-    "carousel1": "Penseur Spirale de 3h du Matin",
-    "carousel2": "Architecte de Scénarios",
-    "carousel3": "Répétiteur de Réponses",
-    "carousel4": "Analyste de Micro-Expressions",
-    "feature1": "8 questions rapides",
-    "feature2": "6 types uniques",
-    "feature3": "Douloureusement relatable"
+    "eyebrow": "Réflexion en 8 questions",
+    "title": "Quelle boucle de pensée revient le plus ?",
+    "hook": "Choisissez la réponse la plus proche de vos habitudes. Il n’y a pas de bonne réponse.",
+    "boundaryTitle": "Ce que ce résultat indique",
+    "boundary": "C’est un aperçu ludique de vos réponses, pas une évaluation de santé mentale ni une étiquette de personnalité.",
+    "startBtn": "Commencer la réflexion",
+    "timeEstimate": "Environ 1 minute · 8 questions",
+    "methodTitle": "Comment le résultat est calculé",
+    "method": "Chaque réponse ajoute un point à la boucle décrite. La plus choisie est affichée ; en cas d’égalité, la première dans l’ordre des questions est retenue."
   },
   "question": {
     "0": "Il est 2h du matin et tu n'arrives pas à dormir. Que fait ton cerveau ?",
+    "1": "Tu vas rencontrer quelqu'un de nouveau. Que se passe-t-il dans ta tête ?",
+    "2": "Tu viens d'envoyer un message important. Et maintenant ?",
+    "3": "Quelque chose de stressant se passe au travail. Ta réaction ?",
+    "4": "Ton ami(e) semble distant(e) ces derniers temps. Ton processus de pensée ?",
+    "5": "Tu dois prendre une décision importante. Comment tu gères ?",
+    "6": "Comment tu penses à l'avenir ?",
+    "7": "Tu es en train de trop penser en ce moment. À quoi ÇA ressemble ?",
     "0a": "Rejoue ce truc gênant que tu as dit il y a 3 ans",
     "0b": "Imagine des chronologies alternatives où tu as fait d'autres choix",
     "0c": "Répète la conversation de demain mot par mot",
     "0d": "Liste tout ce qui pourrait mal tourner demain",
-    "1": "Tu vas rencontrer quelqu'un de nouveau. Que se passe-t-il dans ta tête ?",
     "1a": "Tu répètes ta présentation 47 fois",
     "1b": "Tu analyses chaque expression faciale pendant la conversation",
     "1c": "Tu imagines les 12 résultats possibles de la rencontre",
     "1d": "Tu rejoues la conversation pendant 3 jours d'affilée",
-    "2": "Tu viens d'envoyer un message important. Et maintenant ?",
     "2a": "Tu le relis 8 fois en te demandant si le point a l'air énervé",
     "2b": "Tu imagines toutes les façons possibles dont ils pourraient interpréter tes mots",
     "2c": "Tu paniques parce qu'ils l'ont lu mais n'ont pas répondu",
     "2d": "Tu rédiges 5 messages de suivi, tu n'en envoies aucun",
-    "3": "Quelque chose de stressant se passe au travail. Ta réaction ?",
     "3a": "Tu ne dors pas — ton esprit tourne en boucle toute la nuit",
     "3b": "Tu sautes directement à : je vais être viré, perdre ma maison, vivre dans un van",
     "3c": "Tu construis un plan de contingence en 47 étapes pour chaque résultat possible",
     "3d": "Tu te focalises sur ce que tu aurais pu faire différemment",
-    "4": "Ton ami(e) semble distant(e) ces derniers temps. Ton processus de pensée ?",
     "4a": "Tu analyses les 20 derniers messages pour y trouver un sens caché",
     "4b": "Tu pratiques « Tu es fâché(e) contre moi ? » sur 15 tons différents",
     "4c": "Tu imagines 8 raisons pour lesquelles ils pourraient secrètement te détester",
     "4d": "Tu restes éveillé(e) en repassant chaque interaction à la recherche d'indices",
-    "5": "Tu dois prendre une décision importante. Comment tu gères ?",
     "5a": "Tu recherches obsessionnellement jusqu'à avoir 47 onglets ouverts",
     "5b": "Tu te concentres uniquement sur ce qui pourrait mal tourner avec chaque option",
     "5c": "Tu demandes à tout le monde puis suranalyses tous leurs conseils",
     "5d": "Tu décides, puis tu doutes immédiatement de toi pendant des semaines",
-    "6": "Comment tu penses à l'avenir ?",
     "6a": "Tu catastrophises sur des désastres improbables dans les moindres détails",
     "6b": "Tu crées des simulations mentales détaillées de chaque chemin possible",
     "6c": "Tu perds le sommeil pour des choses qui sont littéralement dans des années",
     "6d": "Tu répètes des conversations futures hypothétiques qui n'arriveront peut-être jamais",
-    "7": "Tu es en train de trop penser en ce moment. À quoi ÇA ressemble ?",
     "7a": "Trop penser au fait que tu penses trop (inception !)",
     "7b": "Analyser exactement POURQUOI tu penses trop à tout",
     "7c": "Construire des théories sur tes propres schémas de pensée",
     "7d": "S'inquiéter que trop penser finira par ruiner ta vie"
   },
   "quiz": {
-    "midQuiz": "À mi-chemin ! Ton profil de sur-penseur prend forme..."
-  },
-  "analyzing": {
-    "title": "Analyse de tes schémas de pensée...",
-    "step1": "Scan des boucles de pensée...",
-    "step2": "Mesure de l'intensité de la spirale...",
-    "step3": "Détection des patterns nocturnes...",
-    "step4": "Calcul de la longueur d'onde de sur-pensée...",
-    "step5": "Profil terminé !"
+    "choose": "Choisissez une réponse"
   },
   "type": {
     "spiral": {
       "name": "Penseur Spirale de 3h du Matin",
-      "tagline": "Ton cerveau n'a pas de bouton off, surtout à 2h du matin.",
-      "description": "Tu es le sur-penseur classique dont le cerveau passe en surrégime dès que ta tête touche l'oreiller. Une pensée mène à une autre, puis à une autre, jusqu'à ce que tu contemples le sens de la vie à 3h du matin. Tes pensées ne vont pas en lignes droites — elles vont en spirales, chaque boucle te tirant plus profond. La bonne nouvelle ? Ton esprit ne s'arrête jamais, ce qui signifie que tu es incroyablement minutieux et conscient de toi-même.",
-      "trait1": "Penseur Nocturne",
-      "trait2": "Introspection Profonde",
-      "trait3": "Maître de la Logique Circulaire"
+      "tagline": "Ton cerveau n'a pas de bouton off, surtout à 2h du matin."
     },
     "architect": {
       "name": "Architecte de Scénarios",
-      "tagline": "Tu as déjà planifié 47 chronologies alternatives.",
-      "description": "Ton cerveau est un moteur de simulation. Avant que quoi que ce soit n'arrive, tu as déjà imaginé chaque résultat possible, créé des plans de contingence et dessiné des arbres de décision. Tu ne penses pas seulement à ce qui pourrait arriver — tu construis des mondes mentaux entiers autour des possibilités. Pendant que les autres vivent dans une réalité, tu exécutes simultanément des scénarios dans une douzaine d'univers parallèles. Cela fait de toi un stratège et un résolveur de problèmes incroyable.",
-      "trait1": "Planificateur Stratégique",
-      "trait2": "Explorateur de Possibilités",
-      "trait3": "Simulateur Mental"
+      "tagline": "Tu as déjà planifié 47 chronologies alternatives."
     },
     "rehearser": {
       "name": "Répétiteur de Réponses",
-      "tagline": "Tu as déjà pratiqué cette conversation 12 fois.",
-      "description": "Chaque conversation est un spectacle que tu as répété des dizaines de fois. Tu tapes tes messages dans l'app Notes avant de les envoyer. Tu pratiques des réponses à des questions que personne n'a posées. Tu sais exactement ce que tu dirais si quelqu'un abordait ce sujet — parce que tu as préparé un discours de 3 minutes sous la douche. Tes conversations ne sont jamais spontanées, mais elles sont toujours impeccables.",
-      "trait1": "Perfectionniste de la Communication",
-      "trait2": "Maître de la Préparation",
-      "trait3": "Artisan des Mots"
+      "tagline": "Tu as déjà pratiqué cette conversation 12 fois."
     },
     "analyst": {
       "name": "Analyste de Micro-Expressions",
-      "tagline": "Ils ont cligné deux fois ? Ça veut dire quelque chose.",
-      "description": "Tu remarques tout. La légère pause avant que quelqu'un ne réponde, le changement à peine perceptible dans leur ton, la façon dont ils ont regardé leur téléphone pendant ton histoire. Ton cerveau est une machine de reconnaissance de patterns calibrée pour capter les signaux sociaux que la plupart des gens ratent. Tu lis entre chaque ligne et derrière chaque sourire. Ça peut être épuisant, mais ça te rend aussi incroyablement empathique et émotionnellement intelligent.",
-      "trait1": "Expert en Comportement Humain",
-      "trait2": "Hyper-Observateur",
-      "trait3": "Intelligence Émotionnelle"
+      "tagline": "Ils ont cligné deux fois ? Ça veut dire quelque chose."
     },
     "catastrophizer": {
       "name": "Catastrophiste du Futur",
-      "tagline": "Mon hobby ? Imaginer les pires scénarios en 4K.",
-      "description": "Les petits problèmes n'existent pas dans ton monde — chaque souci escalade immédiatement vers sa conclusion la plus dramatique. Mal de tête ? Probablement une tumeur au cerveau. Le patron veut te parler ? Tu vas être viré. Un ami n'a pas répondu ? Il te déteste pour toujours. Ton cerveau est un réalisateur de films catastrophe, toujours prêt à produire le prochain blockbuster. Mais voilà le truc — tu es aussi la personne la mieux préparée dans n'importe quelle pièce parce que tu as déjà survécu à chaque pire scénario dans ta tête.",
-      "trait1": "Expert du Pire Cas",
-      "trait2": "Préparation aux Crises",
-      "trait3": "Imagination Vivace"
+      "tagline": "Mon hobby ? Imaginer les pires scénarios en 4K."
     },
     "replayer": {
       "name": "Repasseur Sélectif de Souvenirs",
-      "tagline": "Encore en train de grimacer pour un truc de 2009.",
-      "description": "Ton cerveau est une machine à remonter le temps qui voyage exclusivement vers tes moments les plus gênants. Ce truc bizarre que tu as dit à une fête en 2015 ? Cristallin. La fois où tu as fait coucou à quelqu'un qui ne te faisait pas coucou ? Rejoué chaque nuit. Tu as une mémoire photographique, mais uniquement pour les moments que tu préférerais oublier. Tu ne te souviens pas où tu as mis tes clés, mais tu peux te rappeler chaque détail gênant de cette conversation d'il y a 7 ans.",
-      "trait1": "Archéologue du Cringe",
-      "trait2": "Perfectionniste du Détail",
-      "trait3": "Historien Conscient de Soi"
+      "tagline": "Encore en train de grimacer pour un truc de 2009."
     }
   },
   "result": {
-    "metricsTitle": "Ton profil de sur-penseur",
-    "metric": {
-      "nightThinking": "Pensée Nocturne",
-      "loopIntensity": "Intensité des Boucles",
-      "sleepImpact": "Impact sur le Sommeil",
-      "creativity": "Boost de Créativité",
-      "anxiety": "Niveau d'Anxiété"
-    },
-    "percentile": "{pct}% des sur-penseurs partagent ton type",
-    "shareTitle": "Partage ton type de sur-penseur !",
-    "copyLink": "Copier",
-    "moreTests": "Plus de Tests",
-    "retry": "Réessayer"
+    "eyebrow": "Votre boucle la plus choisie",
+    "calculationTitle": "Ce que signifie le résultat",
+    "calculation": "Vous avez choisi une réponse liée à cette boucle {points} fois sur {total}.",
+    "boundary": "Cela résume seulement ces huit choix. Cela ne mesure ni anxiété, ni capacité, ni personnalité.",
+    "nextAction": "Vérifier votre charge de stress actuelle",
+    "share": "Partager cette réflexion",
+    "retry": "Recommencer",
+    "relatedTitle": "Continuer avec une vérification ciblée"
   },
   "related": {
-    "emotionIceberg": "Iceberg Émotionnel",
-    "stressCheck": "Bilan de Stress",
-    "hspTest": "Test HSP",
-    "aiPersonality": "Personnalité AI",
-    "stressResponse": "Réponse au Stress",
-    "anxietyType": "Type d'Anxiété",
-    "eqTest": "Test QE",
-    "dopamineType": "Type de Dopamine"
+    "emotionIceberg": "Iceberg des émotions",
+    "hspTest": "Réflexion sur la sensibilité"
   },
   "share": {
-    "text": "Je suis un {emoji} {type} ! Quel type de sur-penseur es-tu ? Découvre-le :",
-    "copied": "Copié !"
+    "text": "Une réflexion rapide en 8 questions sur les boucles de pensée :",
+    "success": "Partagé ou copié.",
+    "failure": "Le partage n’est pas disponible dans ce navigateur."
   }
 }
