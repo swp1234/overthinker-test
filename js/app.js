@@ -37,8 +37,30 @@ class Reflection{
     document.getElementById('start-btn').addEventListener('click',()=>this.start());
     document.getElementById('retry-btn').addEventListener('click',()=>this.retry());
     document.getElementById('share-page').addEventListener('click',()=>this.share());
-    document.getElementById('next-action').addEventListener('click',()=>track('next_click'));
-    document.querySelectorAll('[data-related-slug]').forEach(link=>link.addEventListener('click',()=>track('related_click')));
+    document.getElementById('next-action').addEventListener('click',()=>{
+      track('next_click');
+      if(typeof window.gtag==='function'){
+        window.gtag('event','content_cta_click',{
+          cta_surface:'overthinker_result_next',
+          destination:document.getElementById('next-action').getAttribute('href'),
+          source:'overthinker_result',
+          lang:this.lang()
+        });
+      }
+    });
+    document.querySelectorAll('[data-related-slug]').forEach(link=>{
+      link.addEventListener('click',()=>{
+        track('related_click');
+        if(typeof window.gtag==='function'){
+          window.gtag('event','content_cta_click',{
+            cta_surface:'overthinker_result_related',
+            destination:link.getAttribute('href'),
+            source:'overthinker_result',
+            lang:this.lang()
+          });
+        }
+      });
+    });
     this.bindTheme();
     this.bindLanguage();
   }
